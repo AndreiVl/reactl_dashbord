@@ -1,0 +1,35 @@
+.btn--flat {
+	/* 2 Block model */
+	padding: 0;
+
+	/* 3 Typography */
+	color: $color-link;
+
+	/* 4 Visual */
+	border: none;
+	background-color: transparent;
+}
+.btn--flat:hover {
+	/* 3 Typography */
+	text-decoration: underline;
+
+	/* 4 Visual */
+	border: none;
+	background-color: transparent;
+}
+.btn--flat:focus {
+	/* 3 Typography */
+	text-decoration: underline;
+
+	/* 4 Visual */
+	border: none;
+	background-color: transparent;
+}
+.btn--flat:active {
+	/* 3 Typography */
+	text-decoration: underline;
+
+	/* 4 Visual */
+	border: none;
+	background-color: transparent;
+}

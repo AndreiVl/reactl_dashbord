@@ -1,0 +1,72 @@
+.btn--icon {
+	/* 2 Block model */
+	padding: 0;
+
+	/* 4 Visual */
+	background: none;
+	border: none;
+}
+.btn--icon:hover {
+	/* 4 Visual */
+	background: none;
+	border: none;
+}
+.btn--icon:hover .icon {
+	/* 4 Visual */
+	fill: $color-royalblue;
+}
+.btn--icon:focus {
+	/* 4 Visual */
+	background: none;
+	border: none;
+}
+.btn--icon:active {
+	/* 4 Visual */
+	background: none;
+	border: none;
+}
+.btn--icon:disabled {
+	/* 4 Visual */
+	cursor: not-allowed;
+	opacity: 0.4;
+}
+.btn--icon-gray:hover .icon {
+	/* 4 Visual */
+	fill: $color-gainsboro;
+}
+.btn--icon-gray:focus .icon {
+	/* 4 Visual */
+	fill: $color-gainsboro;
+}
+.btn--icon-gray:active .icon {
+	/* 4 Visual */
+	fill: $color-gainsboro;
+}
+.btn--icon-gray:disabled {
+	/* 4 Visual */
+	cursor: not-allowed;
+	fill: $color-gainsboro;
+	opacity: 0.4;
+}
+.btn--icon-darkgray .icon {
+	/* 4 Visual */
+	fill: #858585;
+}
+.btn--icon-darkgray:hover .icon {
+	/* 4 Visual */
+	fill: $color-darkgray;
+}
+.btn--icon-darkgray:focus .icon {
+	/* 4 Visual */
+	fill: $color-darkgray;
+}
+.btn--icon-darkgray:active .icon {
+	/* 4 Visual */
+	fill: $color-darkgray;
+}
+.btn--icon-darkgray:disabled {
+	/* 4 Visual */
+	cursor: not-allowed;
+	fill: $color-darkgray;
+	opacity: 0.4;
+}

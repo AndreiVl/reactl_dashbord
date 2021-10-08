@@ -7,7 +7,9 @@ module.exports = {
 	],
 	"addons": [
 		"@storybook/addon-links",
-		"@storybook/addon-essentials"
+		"@storybook/addon-essentials",
+		"@storybook/addon-controls",
+		"@storybook/addon-actions"
 	],
 	webpackFinal: async (config, { configType }) => {
 		// `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'

@@ -1,0 +1,20 @@
+@import "../../../assets/sass/variables.scss";
+
+.logo {
+	/* 2 Block model */
+	display: flex;
+	width: 100%;
+	max-width: 98px;
+
+	/* 5 Animation */
+	transition: all $animation-speed;
+}
+.logo:hover {
+	/* 4 Visual */
+	opacity: 0.7;
+}
+.logo img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+}

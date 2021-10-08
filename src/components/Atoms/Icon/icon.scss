@@ -1,0 +1,51 @@
+@import "../../../assets/sass/variables.scss";
+
+.icon {
+	/* 2 Block model */
+	display: inline-flex;
+	width: 24px;
+	height: 24px;
+
+	/* 4 Visual */
+	fill: #000000;
+}
+.icon--18 {
+	/* 2 Block model */
+	width: 18px;
+	height: 18px;
+}
+.icon--32 {
+	/* 2 Block model */
+	width: 32px;
+	height: 32px;
+}
+.icon--42 {
+	/* 2 Block model */
+	width: 42px;
+	height: 42px;
+}
+.icon--list {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 20px;
+	margin: 0;
+	padding: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 14px;
+	line-height: 18px;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.icon--list-item {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	column-gap: 10px;
+}

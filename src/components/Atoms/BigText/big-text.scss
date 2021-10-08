@@ -1,0 +1,10 @@
+@import "../../../assets/sass/variables.scss";
+
+.big-text {
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 36px;
+	color: $color-black;
+}

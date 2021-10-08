@@ -1,0 +1,11 @@
+@import "../../../assets/sass/variables.scss";
+
+.chat-form {
+	/* 2 Block model */
+	display: flex;
+}
+.chat-form .input-border-radius {
+	/* 2 Block model */
+	margin: 0 8px;
+	flex-grow: 2;
+}

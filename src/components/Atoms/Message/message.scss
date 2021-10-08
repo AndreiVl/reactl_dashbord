@@ -1,0 +1,16 @@
+@import "../../../assets/sass/variables.scss";
+
+.message {
+	/* 2 Block model */
+	display: inline-flex;
+	padding: 6px 15px;
+
+	/* 4 Visual */
+	border-radius: 5px;
+	background-color: $color-bg-4;
+}
+
+.message--green {
+	/* 4 Visual */
+	background-color: $color-bg-6;
+}

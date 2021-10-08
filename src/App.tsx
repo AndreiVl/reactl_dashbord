@@ -4,8 +4,8 @@ import { hot } from "react-hot-loader/root";
 import Logo from "./assets/images/webpack-logo.png";
 import Logo2 from "./assets/images/works__item-logo-elisabeth.png";
 import LogoSvg from "./assets/images/icon--designing.svg";
-import { H1 } from "./components/H1/H1.jsx";
-import { H2 } from "./components/H2/H2.jsx";
+import { H1 } from "./components/Atoms/H1/H1";
+import { H2 } from "./components/Atoms/H2/H2";
 
 interface Props {
 	name:

@@ -1,6 +1,113 @@
 @import "fonts";
 @import "variables";
+@import "grid/bootstrap-grid";
+@import "mixins";
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	/* 2 Block model */
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	/* 3 Typography */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	/* 2 Block model */
+	display: block;
+}
 body {
 	/* 2 Block model */
 	padding: 0;
@@ -9,15 +116,76 @@ body {
 
 	/* 3 Typography */
 	font-family: $font-main;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	color: $color-black;
 }
-.test-class {
+ol,
+ul {
 	/* 4 Visual */
-	background-color: gray;
+	list-style: none;
 }
-.imbblcok {
-	width: 200px;
-	height: 200px;
-	background-image: url(../images/webpack-logo.png);
-	background-size: cover;
-	background-repeat: no-repeat;
+.wrapper {
+	/* 2 Block model */
+	overflow-x: hidden;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	/* 1 Positioning */
+	position: absolute;
+
+	/* 2 Block model */
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+
+	/* 3 Typography */
+	white-space: nowrap;
+
+	/* 4 Visual */
+	border: 0;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+}
+.overlay {
+	/* 1 Positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+
+	/* 2 Block model */
+	display: none;
+
+	/* 4 Visual */
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+
+	/* 5 Animation */
+	transition: all $animation-speed;
+}
+.overlay--open {
+	/* 2 Block model */
+	display: block;
+
+	/* 4 Visual */
+	opacity: 1;
+}
+.overflow-heidden {
+	/* 2 Block model */
+	overflow: hidden;
+}
+.mr-mb10 {
+	/* 2 Block model */
+	margin-bottom: 15px;
+}
+.container-fluid {
+	/* 2 Block model */
+	padding: 0;
 }
