@@ -9,3 +9,19 @@ export default {
 export const BadgeDefault = () => (
 	<Badge />
 );
+export const BadgeGreen = () => (
+	<Badge
+		color='badge--green'
+	/>
+);
+export const BadgeBig = () => (
+	<Badge
+		size='badge--big'
+	/>
+);
+export const BadgeBorder = () => (
+	<Badge
+		size='badge--big'
+		visual='badge--border'
+	/>
+);

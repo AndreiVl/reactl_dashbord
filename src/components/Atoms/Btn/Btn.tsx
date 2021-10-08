@@ -5,6 +5,7 @@ type BtnProps = {
 	buttonText?: string,
 	type?: 'btn--block' | 'btn--outline' | 'btn--flat',
 	icon?: boolean,
+	iconMod?: 'btn--icon-gray' | 'btn--icon-darkgray',
 	circle?: boolean,
 	types?: boolean,
 	circleBg?: boolean,
@@ -16,6 +17,7 @@ export const Btn: React.FC<BtnProps> = ({
 	buttonText = 'Button',
 	types = true,
 	type,
+	iconMod,
 	icon = false,
 	circle = false,
 	circleBg = false,
@@ -27,6 +29,7 @@ export const Btn: React.FC<BtnProps> = ({
 			type={types ? 'button' : 'submit'} className={`btn 
 			${type || ''} 
 			${icon ? 'btn--icon' : ''}
+			${iconMod || ''}
 			${circle ? 'btn--circle' : ''}
 			${circleBg ? 'btn--circle--bg' : ''}
 			`}

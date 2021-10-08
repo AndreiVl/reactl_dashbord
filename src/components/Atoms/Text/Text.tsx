@@ -3,7 +3,7 @@ import './text.scss';
 
 type TextProps = {
 	fontWeight?: 'text--bold' | 'text--semibold',
-	size?: 'text--sm' | 'text--esm',
+	size?: 'text--sm' | 'text--esm' | 'text--m',
 	color?: 'text--black' | 'text--white',
 	uppercase?: boolean
 	className?: string

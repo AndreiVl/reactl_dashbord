@@ -3,18 +3,20 @@ import './link.scss'
 
 type LinkProps = {
 	href?: string,
-	text?: string,
 	className?: string
-	mod?: 'link--black' | 'link--textdecor' | 'link--gray'
+	mod?: 'link--black' | 'link--textdecor' | 'link--gray',
+	children: React.ReactNode
 }
 
 export const Link: React.FC<LinkProps> = ({
 	href = '#',
-	text = 'Text Link',
 	className,
+	children,
 	mod
 }) => {
 	return (
-		<a href={href} className={`link ${className || ''} ${mod || ''}`}>{text}</a>
+		<a href={href} className={`link ${className || ''} ${mod || ''}`}>
+			{children}
+		</a>
 	)
 }

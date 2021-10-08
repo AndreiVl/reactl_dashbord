@@ -1,0 +1,55 @@
+@import "../../../assets/sass/variables.scss";
+
+.currency-card {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+
+	/* 3 Typography */
+	text-decoration: none;
+
+	/* 4 Visual */
+	background-color: $color-bg;
+	outline: none;
+
+	/* 5 Animation */
+	transition: all $animation-speed;
+}
+.currency-card__top {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 4px;
+}
+.currency-card__name-currency {
+	/* 3 Typography */
+	text-transform: uppercase;
+}
+.currency-card__total {
+	/* 2 Block model */
+	margin-bottom: 16px;
+
+	/* 3 Typography */
+	text-transform: uppercase;
+}
+.currency-card__course {
+	/* 3 Typography */
+	text-transform: uppercase;
+}
+.currency-card:hover {
+	/* 4 Visual */
+	cursor: pointer;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.currency-card:focus {
+	/* 4 Visual */
+	cursor: pointer;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.currency-card:active {
+	/* 4 Visual */
+	cursor: pointer;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}

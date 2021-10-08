@@ -1,0 +1,27 @@
+@import "../../../assets/sass/variables.scss";
+.menu {
+	/* 2 Block model */
+	width: 100%;
+}
+.menu__title {
+	/* 2 Block model */
+	margin-bottom: 8px;
+
+	/* 3 Typography */
+	text-transform: uppercase;
+}
+.menu__list {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.menu__item {
+	/* 2 Block model */
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
