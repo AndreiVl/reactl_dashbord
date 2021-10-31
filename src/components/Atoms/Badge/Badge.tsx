@@ -3,7 +3,7 @@ import './badge.scss';
 
 import { Text } from '../Text/Text'
 
-type BadgeProps = {
+export type BadgeProps = {
 	text?: string,
 	color?: 'badge--green' | 'badge--red',
 	size?: 'badge--big',
