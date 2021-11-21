@@ -16,5 +16,7 @@ export const ChatUserNoActive = () => (
 		text='Lorem'
 		userPikActive='user-pic--big-noactiv'
 		notificationType={false}
+		notification={10}
+		date='4:32'
 	/>
 );

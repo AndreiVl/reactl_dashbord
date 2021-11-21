@@ -3,7 +3,7 @@ import './user-pik.scss'
 import UserPik from '../../../assets/images/user-pic__img-01.png'
 import UserPik2x from '../../../assets/images/user-pic__img-01@2x.png'
 
-type UerPikProps = {
+export type UerPikProps = {
 	img?: string,
 	img2x?: string,
 	imgAlt?: string,

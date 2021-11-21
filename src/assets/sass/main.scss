@@ -181,6 +181,25 @@ input[type="radio"].visually-hidden {
 	/* 2 Block model */
 	overflow: hidden;
 }
+.custom-scrollbar {
+	/* 4 Visual */
+	scrollbar-width: 3px;
+	scrollbar-color: #e742c3 #9491fb;
+}
+.custom-scrollbar::-webkit-scrollbar {
+	/* 2 Block model */
+	width: 3px;
+	height: 80%;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+	/* 4 Visual */
+	background: #9491fb;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	/* 4 Visual */
+	background: #e742c3;
+	border: 1px solid #e742c3;
+}
 .mr-mb10 {
 	/* 2 Block model */
 	margin-bottom: 15px;

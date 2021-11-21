@@ -30,9 +30,9 @@ export const ChatUser: React.FC<ChatUserProps> = ({
 	userUrl = '#',
 	title = ' John Doe',
 	text = 'Lorem ipsum dolor sit',
-	date = '4:32',
+	date,
 	notificationType = true,
-	notification = 10,
+	notification,
 	className
 }) => {
 	return (
