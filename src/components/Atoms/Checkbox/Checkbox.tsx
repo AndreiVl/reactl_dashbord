@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import './checkbox.scss'
-import { Text } from '../Text/Text';
 
 interface CheckboxProps {
 	name: string,
 	value: string,
-	text?: string,
+	text?: React.ReactNode,
 	checked?: boolean,
 	disabled?: boolean,
 }
@@ -13,7 +12,7 @@ interface CheckboxProps {
 export const Checkbox: React.FC<CheckboxProps> = ({
 	name = '',
 	value = '',
-	text = 'checkbox',
+	text,
 	checked = false,
 	disabled = false,
 }) => {
@@ -22,9 +21,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 			<label htmlFor={name}>
 				<input type="checkbox" name={name} id={name} value={value} defaultChecked={checked} disabled={disabled} />
 				<span className="checkbox__visual"></span>
-				{text &&
-					<Text>{text}</Text>
-				}
+				{text}
 			</label>
 		</div>
 	)

@@ -1,5 +1,6 @@
 import React from "react";
 import { Checkbox } from "./Checkbox";
+import { Text } from "../Text/Text";
 
 export default {
 	title: 'Components/Atoms/Checkbox',
@@ -10,7 +11,9 @@ export const CheckboxDefault = () => (
 	<Checkbox
 		name='accept'
 		value='accept'
-		text="accept"
+		text={
+			<Text>accept</Text>
+		}
 	/>
 )
 export const CheckboxCheck = () => (
@@ -18,14 +21,18 @@ export const CheckboxCheck = () => (
 		name='check'
 		value='check'
 		checked
-		text="check"
+		text={
+			<Text>check</Text>
+		}
 	/>
 )
 export const CheckboxDese = () => (
 	<Checkbox
 		name='dese'
 		value='dese'
-		text="dese"
+		text={
+			<Text>dese</Text>
+		}
 		disabled
 	/>
 )
@@ -33,7 +40,9 @@ export const CheckboxDis = () => (
 	<Checkbox
 		name='dis'
 		value='dis'
-		text="dis"
+		text={
+			<Text>dis</Text>
+		}
 		checked
 		disabled
 	/>

@@ -6,17 +6,26 @@ type InputProps = {
 	value?: string,
 	name: string,
 	type: string,
+	inputMod?: inputMod,
+	labelText?: string,
 }
+
+type inputMod = 'border';
 
 export const Input: React.FC<InputProps> = ({
 	placeholder = '',
 	value = '',
 	name = '',
-	type = ''
+	type = '',
+	inputMod,
+	labelText,
 }) => {
 	return (
-		<div className="input">
-			<input className="input__input" type={type} name={name} defaultValue={value} placeholder={placeholder} id={name} />
-		</div>
+		<div className={`input ${inputMod ? `input--${inputMod}` : ''}`}>
+			{labelText &&
+				<label htmlFor={name}>{labelText}</label>
+			}
+			<input className={`input__input`} type={type} name={name} defaultValue={value} placeholder={placeholder} id={name} />
+		</div >
 	);
 };

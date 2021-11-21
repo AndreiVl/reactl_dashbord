@@ -1,0 +1,25 @@
+.form__item {
+	/* 2 Block model */
+	margin-bottom: 16px;
+}
+.form__item:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.form__item-big {
+	/* 2 Block model */
+	margin-bottom: 24px;
+}
+.form__item .h3 {
+	/* 2 Block model */
+	margin-bottom: 8px;
+}
+.form__checkbox {
+	/* 2 Block model */
+	display: flex;
+	align-items: flex-start;
+}
+.form__checkbox .checkbox {
+	/* 2 Block model */
+	padding-top: 2px;
+}
