@@ -14,7 +14,7 @@ type BtnProps = {
 }
 
 export const Btn: React.FC<BtnProps> = ({
-	buttonText = 'Button',
+	buttonText,
 	types = true,
 	type,
 	iconMod,

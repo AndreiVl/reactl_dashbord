@@ -10,32 +10,31 @@ export default {
 };
 
 export const BtnDefault = () => (
-	<Btn />
+	<Btn buttonText='Button' />
 );
 export const BtnSubmit = () => (
-	<Btn
+	<Btn buttonText='Button'
 		types={false}
 	/>
 );
 export const BtnBlock = () => (
-	<Btn
+	<Btn buttonText='Button'
 		type='btn--block'
 	/>
 );
 export const BtnFlat = () => (
-	<Btn
+	<Btn buttonText='Button'
 		type='btn--flat'
 	/>
 );
 export const BtnOutline = () => (
-	<Btn
+	<Btn buttonText='Button'
 		type='btn--outline'
 	/>
 );
 export const BtnIconBlock = () => (
 	<Btn
 		icon
-		buttonText=''
 		iconLeft={
 			<Icon
 				icons={IconHamburger}
@@ -47,7 +46,6 @@ export const BtnIconBlock = () => (
 export const BtnIconCircle = () => (
 	<Btn
 		circle
-		buttonText=''
 		iconLeft={
 			<Icon
 				icons={IconPlain}
@@ -61,7 +59,6 @@ export const BtnIconCircleBg = () => (
 	<Btn
 		circle
 		circleBg
-		buttonText=''
 		iconLeft={
 			<Icon
 				icons={IconPlain}
