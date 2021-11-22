@@ -63,18 +63,3 @@ export const Header: React.FC<HeaderProps> = ({
 		</header>
 	)
 }
-
-// header.header
-// 	div.header__left
-// 		+logo({img: 'logo.svg', alt: 'Crypto', title: 'Crypto'})
-// 		+btn({icon_l: 'icon--hamburger'})(class="icon--block")
-// 	div.header__right
-// 		div.header__serch
-// 			+search({label_text: false, icon: 'icon--search', type: 'text', name: 'serch', placeholder: 'Search here...'})
-
-// 		div.header__action
-// 			div.header__action-btn
-// 				+btn({icon_l: 'icon--apps'})(class="icon--block")
-// 				+btn({icon_l: 'icon--mail'})(class="icon--block")
-// 				+btn({icon_l: 'icon--notifications'})(class="icon--block")
-// 			+header-profile({text: 'Constance Fields', img: 'user-pic__img-01', alt: 'Author', title: 'Author'})

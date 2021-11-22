@@ -1,0 +1,57 @@
+@import "../../../assets/sass/variables.scss";
+@import "../../../assets/sass/grid/bootstrap-grid.scss";
+.main {
+	/* 2 Block model */
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 48px;
+	padding-bottom: 48px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-left: 39px;
+		padding-right: 39px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-left: 36px;
+		padding-right: 36px;
+	}
+}
+.main .container {
+	@media (max-width: 767px) {
+		/* 2 Block model */
+		max-width: 100%;
+	}
+}
+.main__mrh1 {
+	/* 2 Block model */
+	margin-bottom: 16px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+	}
+}
+.main__item {
+	/* 2 Block model */
+	margin-bottom: 32px;
+}
+.main__card-item {
+	/* 2 Block model */
+	margin-bottom: 16px;
+
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+	}
+}
+.main__card-item--mb0 {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.main__table {
+	/* 2 Block model */
+	overflow-x: auto;
+}
