@@ -17,6 +17,7 @@ type ReferralItemProps = {
 	name?: string,
 	mailto?: string,
 	email?: string,
+	badgeText?: string,
 	className?: string
 }
 
@@ -26,6 +27,7 @@ export const ReferralItem: React.FC<ReferralItemProps> = ({
 	imgUser2x = UserImg2x,
 	name = 'Happy Rana',
 	mailto,
+	badgeText = 'Pending',
 	email = 'Ramonrid@wanprotonmail.com',
 	className,
 }) => {
@@ -33,6 +35,7 @@ export const ReferralItem: React.FC<ReferralItemProps> = ({
 		<div className={`referral-item ${className || ''}`}>
 			<div className="referral__status">
 				<Badge
+					text={badgeText}
 					color={`${badgeColor ? 'badge--green' : 'badge--red'}`}
 				/>
 			</div>
