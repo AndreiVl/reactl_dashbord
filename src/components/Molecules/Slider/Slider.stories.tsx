@@ -1,18 +1,34 @@
 import React from "react";
-import { SliderItemReg } from "./Slider";
+import { Slider } from "./Slider";
 import ImgSlider from "../../../assets/images/slider__img-01.png"
 
 export default {
 	title: 'Components/Molecules/SliderItemReg',
-	component: SliderItemReg,
+	component: Slider,
 };
 
 export const SliderDefault = () => (
-	<SliderItemReg
+	<Slider
 		className='slider-item-reg'
-		img={ImgSlider}
-		imgAlt='Dasboard'
-		title='Dashlight 1'
-		text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus purus a, mauris quisque habitasse'
+		items={[
+			{
+				img: ImgSlider,
+				imgAlt: 'Dasboard',
+				title: 'Dashlight 1',
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus purus a, mauris quisque habitasse',
+			},
+			{
+				img: ImgSlider,
+				imgAlt: 'Dasboard',
+				title: 'Dashlight 2',
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus purus a, mauris quisque habitasse',
+			},
+			{
+				img: ImgSlider,
+				imgAlt: 'Dasboard',
+				title: 'Dashlight 3',
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus purus a, mauris quisque habitasse',
+			}
+		]}
 	/>
 );
