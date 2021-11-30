@@ -10,10 +10,8 @@ type WalletProps = {
 	desc?: React.ReactNode,
 	walletItems?: {
 		title?: React.ReactNode,
-		itemsWallet?: [],
+		walletItem?: React.ReactNode[],
 	}[],
-	itemsWallet?: React.ReactNode[],
-
 }
 
 export const Wallet: React.FC<WalletProps> = ({
@@ -21,7 +19,6 @@ export const Wallet: React.FC<WalletProps> = ({
 	title,
 	lead,
 	walletItems = [],
-	itemsWallet = [],
 }) => {
 	return (
 		<div className={`wallet ${className || ''}`}>
@@ -49,13 +46,27 @@ export const Wallet: React.FC<WalletProps> = ({
 						</div>
 					</div>
 
-					{itemsWallet.map((itemTwo, index) => (
-						<div className="col-12 col-md-6 col-lg-4 wallet__item--yellow" key={index}>
-							{itemTwo}
-						</div>
-					))}
+					<WalletRow rowWalletItem={item.walletItem} />
 				</div>
 			))}
 		</div>
+	)
+}
+
+type WalletRowProps = {
+	rowWalletItem?: React.ReactNode[]
+}
+
+const WalletRow: React.FC<WalletRowProps> = ({
+	rowWalletItem = [],
+}) => {
+	return (
+		<>
+			{rowWalletItem.map((item, index) => (
+				<div className="col-12 col-md-6 col-lg-4 wallet__item--yellow" key={index}>
+					{item}
+				</div>
+			))}
+		</>
 	)
 }

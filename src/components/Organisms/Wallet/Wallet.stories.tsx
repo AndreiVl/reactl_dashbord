@@ -27,132 +27,134 @@ export const WalletDefault = () => (
 		walletItems={[
 			{
 				title: <Text fontWeight='text--bold'>Crypto Accounts</Text>,
+				walletItem: [
+					<WalletItem
+						icons={IconBtc}
+						name='icon--btc'
+						iconMod='icon--32'
+						iconBtn={IconMore}
+						iconNameBtn='icon--more'
+						title='Bitcoin Wallet'
+						crypto='26.509505 BTC'
+						currency='10,924.63USD'
+						itemsLink={[
+							{
+								href: '#',
+								link: 'Send'
+							},
+							{
+								href: '#',
+								link: 'Receive'
+							},
+							{
+								href: '#',
+								link: 'Withdraw'
+							}
+						]}
+					/>,
+					<WalletItem
+						icons={IconNio}
+						name='icon--nio'
+						iconMod='icon--32'
+						iconBtn={IconMore}
+						iconNameBtn='icon--more'
+						title='NioWallet'
+						crypto='2.732058 NIO'
+						currency='5,924.63USD'
+						itemsLink={[
+							{
+								href: '#',
+								link: 'Send'
+							},
+							{
+								href: '#',
+								link: 'Receive'
+							},
+							{
+								href: '#',
+								link: 'Withdraw'
+							}
+						]}
+					/>,
+					<WalletItem
+						icons={IconEth}
+						name='icon--eth'
+						iconMod='icon--32'
+						iconBtn={IconMore}
+						iconNameBtn='icon--more'
+						title='Ethereum Wallet'
+						crypto='0.452058 ETH'
+						currency='33,924.63USD'
+						itemsLink={[
+							{
+								href: '#',
+								link: 'Send'
+							},
+							{
+								href: '#',
+								link: 'Receive'
+							},
+							{
+								href: '#',
+								link: 'Withdraw'
+							}
+						]}
+					/>,
+				]
 			},
 			{
 				title: <Text fontWeight='text--bold'>Fiat Accounts</Text>,
+				walletItem: [
+					<WalletItem
+						icons={IconUsd}
+						name='icon--usd'
+						iconMod='icon--32'
+						iconBtn={IconMore}
+						iconNameBtn='icon--more'
+						title='USD Account'
+						crypto='2.732058 USD'
+						currency='4,924.63USD'
+						itemsLink={[
+							{
+								href: '#',
+								link: 'Send'
+							},
+							{
+								href: '#',
+								link: 'Receive'
+							},
+							{
+								href: '#',
+								link: 'Withdraw'
+							}
+						]}
+					/>,
+					<WalletItem
+						icons={IconEur}
+						name='icon--eur'
+						iconMod='icon--32'
+						iconBtn={IconMore}
+						iconNameBtn='icon--more'
+						title='EUR Account'
+						crypto='2.732058 EUR'
+						currency='10,924.63USD'
+						itemsLink={[
+							{
+								href: '#',
+								link: 'Send'
+							},
+							{
+								href: '#',
+								link: 'Receive'
+							},
+							{
+								href: '#',
+								link: 'Withdraw'
+							}
+						]}
+					/>
+				]
 			}
-		]}
-		itemsWallet={[
-			<WalletItem
-				icons={IconBtc}
-				name='icon--btc'
-				iconMod='icon--32'
-				iconBtn={IconMore}
-				iconNameBtn='icon--more'
-				title='Bitcoin Wallet'
-				crypto='26.509505 BTC'
-				currency='10,924.63USD'
-				itemsLink={[
-					{
-						href: '#',
-						link: 'Send'
-					},
-					{
-						href: '#',
-						link: 'Receive'
-					},
-					{
-						href: '#',
-						link: 'Withdraw'
-					}
-				]}
-			/>,
-			<WalletItem
-				icons={IconNio}
-				name='icon--nio'
-				iconMod='icon--32'
-				iconBtn={IconMore}
-				iconNameBtn='icon--more'
-				title='NioWallet'
-				crypto='2.732058 NIO'
-				currency='5,924.63USD'
-				itemsLink={[
-					{
-						href: '#',
-						link: 'Send'
-					},
-					{
-						href: '#',
-						link: 'Receive'
-					},
-					{
-						href: '#',
-						link: 'Withdraw'
-					}
-				]}
-			/>,
-			<WalletItem
-				icons={IconEth}
-				name='icon--eth'
-				iconMod='icon--32'
-				iconBtn={IconMore}
-				iconNameBtn='icon--more'
-				title='Ethereum Wallet'
-				crypto='0.452058 ETH'
-				currency='33,924.63USD'
-				itemsLink={[
-					{
-						href: '#',
-						link: 'Send'
-					},
-					{
-						href: '#',
-						link: 'Receive'
-					},
-					{
-						href: '#',
-						link: 'Withdraw'
-					}
-				]}
-			/>,
-			<WalletItem
-				icons={IconUsd}
-				name='icon--usd'
-				iconMod='icon--32'
-				iconBtn={IconMore}
-				iconNameBtn='icon--more'
-				title='USD Account'
-				crypto='2.732058 USD'
-				currency='4,924.63USD'
-				itemsLink={[
-					{
-						href: '#',
-						link: 'Send'
-					},
-					{
-						href: '#',
-						link: 'Receive'
-					},
-					{
-						href: '#',
-						link: 'Withdraw'
-					}
-				]}
-			/>,
-			<WalletItem
-				icons={IconEur}
-				name='icon--eur'
-				iconMod='icon--32'
-				iconBtn={IconMore}
-				iconNameBtn='icon--more'
-				title='EUR Account'
-				crypto='2.732058 EUR'
-				currency='10,924.63USD'
-				itemsLink={[
-					{
-						href: '#',
-						link: 'Send'
-					},
-					{
-						href: '#',
-						link: 'Receive'
-					},
-					{
-						href: '#',
-						link: 'Withdraw'
-					}
-				]}
-			/>
 		]}
 	/>
 );
