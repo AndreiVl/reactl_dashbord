@@ -73,6 +73,7 @@
 		align-items: center;
 		justify-content: flex-end;
 		flex-direction: row;
+		column-gap: 40px;
 
 		/* 3 Typography */
 		text-align: right;
@@ -81,7 +82,7 @@
 		border-top: none;
 	}
 }
-.transactions-item__bottom > span {
+.transactions-item__bottom > p {
 	/* 2 Block model */
 	display: inline-block;
 	margin-top: 8px;
@@ -91,7 +92,6 @@
 		/* 2 Block model */
 		margin-top: 0;
 		margin-bottom: 0;
-		margin-right: 40px;
 	}
 }
 .transactions-item__img {

@@ -1,0 +1,34 @@
+@import "../../../assets/sass/variables.scss";
+@import "../../../assets/sass/grid/bootstrap-grid.scss";
+.transactions__list {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.transactions__item {
+	/* 2 Block model */
+	margin-bottom: 16px;
+}
+.transactions__item:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.transactions__mrb-green {
+	/* 2 Block model */
+	margin-bottom: 24px;
+}
+.transactions__mrb-orange {
+	/* 2 Block model */
+	margin-bottom: 48px;
+}
+.transactions__item--green {
+	/* 2 Block model */
+	margin-bottom: 24px;
+}
+.transactions__item--green:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}

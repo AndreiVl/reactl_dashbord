@@ -50,7 +50,7 @@ export const TransactionsItem: React.FC<TransactionsItemProps> = ({
 
 			{bottom &&
 				<div className="transactions-item__bottom">
-					<Text fontWeight='text--semibold' color='text--black'>
+					<Text fontWeight='text--semibold'>
 						{conferm}
 					</Text>
 					{badge &&
