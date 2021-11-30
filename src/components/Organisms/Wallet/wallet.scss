@@ -1,0 +1,49 @@
+@import "../../../assets/sass/grid/bootstrap-grid.scss";
+.wallet__item {
+	/* 2 Block model */
+	margin-bottom: 16px;
+}
+.wallet__item-title {
+	/* 2 Block model */
+	margin-bottom: 16px;
+}
+.wallet__mr-violet {
+	/* 2 Block model */
+	margin-bottom: 8px;
+}
+.wallet__btn-mr17 {
+	/* 2 Block model */
+	margin-right: 17px;
+}
+.wallet__btns {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	column-gap: 17px;
+}
+.wallet__item--mobile-blue {
+	/* 2 Block model */
+	margin-bottom: 16px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+	}
+}
+.wallet__item--mobile-blue:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.wallet__item--yellow {
+	/* 2 Block model */
+	margin-bottom: 16px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 32px;
+	}
+}
+.wallet__item--yellow:last-child {
+	/* 2 Block model */
+	margin-bottom: 32px;
+}
