@@ -1,6 +1,5 @@
 import React from 'react';
 import './order-book.scss';
-import { Btn } from '../../Atoms/Btn/Btn';
 
 type OrderBookProps = {
 	className?: string,
@@ -9,6 +8,7 @@ type OrderBookProps = {
 	btnTopOne?: React.ReactNode,
 	btnTopTwo?: React.ReactNode,
 	tabs?: React.ReactNode,
+	more?: React.ReactNode,
 }
 
 export const OrderBook: React.FC<OrderBookProps> = ({
@@ -18,21 +18,27 @@ export const OrderBook: React.FC<OrderBookProps> = ({
 	btnTopOne,
 	btnTopTwo,
 	tabs,
-
+	more,
 }) => {
 	return (
 		<div className={`order-book ${className || ''}`}>
 			<div className="row justify-content-between main__item">
 				<div className='col-12 col-md-auto main__mrh1'>
-					{title}
+					<div className="wallet__mr-violet">
+						{title}
+					</div>
+
 					{lead}
 				</div>
 
 				<div className="col-12 col-md-auto">
-					<div className="order-book__mr17">
-						{btnTopOne}
+					<div className='order-book__btns'>
+						<div className="order-book__mr17">
+							{btnTopOne}
+						</div>
 						{btnTopTwo}
 					</div>
+
 				</div>
 			</div>
 
@@ -40,9 +46,13 @@ export const OrderBook: React.FC<OrderBookProps> = ({
 				<div className="col-12">
 					<div className='order-book__tabs'>
 						{tabs}
-
-						<div className="order-book__tab" id='tab-1'></div>
 					</div>
+				</div>
+			</div>
+
+			<div className='col-12 align-self-center'>
+				<div className='order-book__more'>
+					{more}
 				</div>
 			</div>
 		</div>

@@ -6,6 +6,11 @@
 	align-items: flex-start;
 	justify-content: space-between;
 }
+.order-book__btns {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+}
 .order-book__top-control {
 	/* 2 Block model */
 	display: flex;
