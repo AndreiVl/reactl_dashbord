@@ -1,0 +1,42 @@
+@import "../../../assets/sass/variables.scss";
+@import "../../../assets/sass/grid/bootstrap-grid.scss";
+.order__top {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+.order-book__controls {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+}
+.order-book__controls .checkbox {
+	/* 2 Block model */
+	margin-right: 19px;
+}
+.order__mb-blue {
+	/* 2 Block model */
+	margin-bottom: 16px;
+}
+.order__month {
+	/* 2 Block model */
+	margin-bottom: 32px;
+}
+.order__list {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.order__item {
+	/* 2 Block model */
+	margin-bottom: 4px;
+}
+.order__item:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}

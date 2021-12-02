@@ -10,6 +10,8 @@ type OrderItemProps = {
 	iconName?: string,
 	title?: string,
 	crypto?: string,
+	date?: string,
+	currency?: string,
 	className?: string
 }
 
@@ -19,6 +21,8 @@ export const OrderItem: React.FC<OrderItemProps> = ({
 	iconName = 'icon--eth-blue',
 	title = 'Buy Bitcoin',
 	crypto = '0.5384 BTC',
+	date,
+	currency,
 	className
 }) => {
 	return (
@@ -53,17 +57,27 @@ export const OrderItem: React.FC<OrderItemProps> = ({
 						className='order-item__date'
 						size='text--sm'
 					>
-						{title}
+						{date}
 					</Text>
 
 					<Text
 						className='order-item__currency'
 						size='text--sm'
 					>
-						{title}
+						{currency}
 					</Text>
 				</div>
 			</div>
 		</a>
 	)
 }
+
+
+// +order-item({icon: 'icon--eth-blue', title: 'Buy Ethereum', crypto: '0.5384 ETH', date: 'Nov 12, 2019 11:34 PM', currency: '3,980.93 USD'})
+
+// +order-item({icon: 'icon--btc-orange', title: 'Buy Bitcoin',crypto: '0.5384 BTC', date: 'Nov 12, 2019 11:34 PM', currency: '3,980.93 USD'})(class="order-item--active")
+
+
+// +order-item({icon: 'icon--btc-orange', title: 'Buy Bitcoin', crypto: '0.5384 BTC', date: 'Nov 12, 2019 11:34 PM', currency: '3,980.93 USD'})
+
+// +order-item({icon: 'icon--btc-orange', title: 'Buy Bitcoin', crypto: '0.5384 BTC', date: 'Nov 12, 2019 11:34 PM', currency: '3,980.93 USD'})(class="order-item--active")
