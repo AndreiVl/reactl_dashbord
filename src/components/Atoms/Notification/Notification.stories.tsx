@@ -10,5 +10,5 @@ export const NotificationDefault = () => (
 	<Notification />
 );
 export const NotificationRed = () => (
-	<Notification className='notification--red' number={10} />
+	<Notification red number={10} />
 );
