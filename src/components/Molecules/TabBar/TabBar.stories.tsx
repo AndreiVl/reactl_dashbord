@@ -29,28 +29,3 @@ export const TabsDefault = () => (
 		]}
 	/>
 );
-
-// export const TabsNoti = () => (
-// 	<Tabs
-// 		items={[
-// 			{
-// 				active: true,
-// 				href: '#',
-// 				link: 'Personal',
-// 				number: 10
-// 			},
-// 			{
-// 				href: '#',
-// 				link: 'Security'
-// 			},
-// 			{
-// 				href: '#',
-// 				link: 'Notifications'
-// 			},
-// 			{
-// 				href: '#',
-// 				link: 'Connect Social'
-// 			}
-// 		]}
-// 	/>
-// );
