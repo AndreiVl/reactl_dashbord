@@ -49,29 +49,36 @@ export const SettingPersonal: React.FC<SettingPersonalProps> = ({
 				{lead}
 			</div>
 
-			<div className="setting-personal__title">
-				{subtitle}
-			</div>
+			{subtitle &&
+				<div className="setting-personal__title">
+					{subtitle}
+				</div>
+			}
 
-			<ul className="setting-personal__list">
-				{settingPersonaBasics.map((item, index) => (
-					<li className="setting-personal__item" key={index}>
-						{item}
-					</li>
-				))}
-			</ul>
+			{settingPersonaBasics &&
+				<ul className="setting-personal__list">
+					{settingPersonaBasics.map((item, index) => (
+						<li className="setting-personal__item" key={index}>
+							{item}
+						</li>
+					))}
+				</ul>}
 
-			<div className="setting-personal__title">
-				{subtitleTwo}
-			</div>
+			{subtitleTwo &&
+				<div className="setting-personal__title">
+					{subtitleTwo}
+				</div>
+			}
 
-			<ul className="setting-personal__list">
-				{settingPersonaPreference.map((item, index) => (
-					<li className="setting-personal__item" key={index}>
-						{item}
-					</li>
-				))}
-			</ul>
+			{settingPersonaPreference &&
+				<ul className="setting-personal__list">
+					{settingPersonaPreference.map((item, index) => (
+						<li className="setting-personal__item" key={index}>
+							{item}
+						</li>
+					))}
+				</ul>
+			}
 		</div>
 	)
 }
