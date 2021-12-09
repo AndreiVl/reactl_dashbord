@@ -50,11 +50,9 @@ export const ChatUser: React.FC<ChatUserProps> = ({
 
 			<div className="chat-user__info">
 				<div className="chat-user__left">
-					<a href={userUrl} target="_blank">
+					<a href={userUrl} target="_blank" className='chat-user__title'>
 						<Text
-							className="chat-user__title"
 							fontWeight='text--bold'
-							color='text--black'
 						>
 							{title}
 						</Text>

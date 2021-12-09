@@ -9,22 +9,16 @@
 	/* 2 Block model */
 	margin-right: 8px;
 }
-.header-profile__link .text {
-	/* 3 Typography */
-	color: $color-black;
-	text-decoration: none;
 
-	transition: all $animation-speed;
-}
-.header-profile__link .text:hover {
-	/* 3 Typography */
-	color: $color-link;
-}
-.header-profile__link .text:active {
-	/* 3 Typography */
-	color: $color-link;
-}
-.header-profile__link .text:focus {
-	/* 3 Typography */
-	color: $color-link;
-}
+// .header-profile__link:hover {
+// 	/* 3 Typography */
+// 	color: $color-link;
+// }
+// .header-profile__link:active {
+// 	/* 3 Typography */
+// 	color: $color-link;
+// }
+// .header-profile__link:focus {
+// 	/* 3 Typography */
+// 	color: $color-link;
+// }

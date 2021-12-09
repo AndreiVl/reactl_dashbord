@@ -18,19 +18,23 @@
 .chat-user__title {
 	/* 3 Typography */
 	text-decoration: none;
+}
+.chat-user__title .text {
+	/* 3 Typography */
+	color: $color-black;
 
 	/* 5 Animation */
 	transition: all $animation-speed;
 }
-.chat-user__title:hover {
+.chat-user__title:hover .text {
 	/* 3 Typography */
 	color: $color-link;
 }
-.chat-user__title:focus {
+.chat-user__title:focus .text {
 	/* 3 Typography */
 	color: $color-link;
 }
-.chat-user__title:active {
+.chat-user__title:active .text {
 	/* 3 Typography */
 	color: $color-link;
 }

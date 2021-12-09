@@ -1,6 +1,9 @@
 @import "../../../assets/sass/variables.scss";
 
 .text {
+	/* 2 Block model */
+	margin: 0;
+
 	/* 3 Typography */
 	font-family: $font-main;
 	font-size: 14px;

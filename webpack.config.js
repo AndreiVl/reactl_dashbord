@@ -71,7 +71,9 @@ const config = {
 	},
 	devServer: {
 		port: 8080,
-		hot: isDev
+		hot: isDev,
+		// overlay: true,
+		historyApiFallback: true,
 	},
 	plugins: [
 		// new CopyPlugin({
@@ -95,3 +97,9 @@ const config = {
 };
 
 module.exports = config;
+
+// module.exports = {
+// 	performance: {
+// 		hints: false,
+// 	},
+// };

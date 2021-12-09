@@ -2,6 +2,7 @@ import React from "react";
 import './header-profile.scss';
 import { Text } from '../../Atoms/Text/Text';
 import { UerPik } from '../../Atoms/UerPik/UerPik';
+import { Link } from '../../Atoms/Link/Link';
 import UserPik from '../../../assets/images/user-pic__img-01.png'
 import UserPik2x from '../../../assets/images/user-pic__img-01@2x.png'
 
@@ -27,11 +28,14 @@ export const HeaderProfile: React.FC<HeaderProfileProps> = ({
 }) => {
 	return (
 		<div className={`header-profile ${className || ''}`}>
-			<a href={url} target="_blank" className='header-profile__link'>
+			<div className="header-profile__link">
 				<Text>
-					{text}
+					<Link href={url} mod='link--gray' >
+						{text}
+					</Link>
 				</Text>
-			</a>
+			</div>
+
 			<UerPik
 				img={img}
 				img2x={img2x}
