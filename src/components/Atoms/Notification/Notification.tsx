@@ -1,6 +1,6 @@
 import React from "react";
 import './notification.scss';
-import { Text } from '../Text/Text'
+import { TextEsm } from '../Text/Text'
 
 type NotificationProps = {
 	number?: number,
@@ -15,12 +15,9 @@ export const Notification: React.FC<NotificationProps> = ({
 }) => {
 	return (
 		<div className={`notification ${className || ''} ${red ? 'notification--red' : ''}`}>
-			<Text
-				fontWeight="text--bold"
-				size="text--esm"
-			>
+			<TextEsm>
 				{number}
-			</Text>
+			</TextEsm>
 		</div>
 	)
 }

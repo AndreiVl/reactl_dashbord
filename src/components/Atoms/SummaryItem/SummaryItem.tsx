@@ -21,17 +21,17 @@ export const SummaryItem: React.FC<SummaryItemProps> = ({
 	return (
 		<div className={`summary-item ${className || ""}`}>
 			<div className="summary-item__body">
-				<Text
-					className="summary-item__title"
-					color="text--black"
-				>
-					{title}
-				</Text>
-				<Text
-					className="summary-item__text"
-				>
-					{text}
-				</Text>
+				<div className="summary-item__title">
+					<Text>
+						{title}
+					</Text>
+				</div>
+
+				<div className="summary-item__text">
+					<Text>
+						{text}
+					</Text>
+				</div>
 			</div>
 			{icon &&
 				<Icon
