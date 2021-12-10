@@ -3,17 +3,17 @@ import React from 'react';
 import './h1.scss';
 
 type H1Props = {
-	className?: string
-	text?: string
+	className?: string,
+	children: React.ReactNode
 }
 
 export const H1: React.FC<H1Props> = ({
 	className = '',
-	text = 'Title H1',
+	children,
 }) => {
 	return (
 		<h1 className={`h1 ${className || ""}`}>
-			{text}
+			{children}
 		</h1>
 	)
 }

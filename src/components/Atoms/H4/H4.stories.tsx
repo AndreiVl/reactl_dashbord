@@ -8,5 +8,7 @@ export default {
 
 
 export const H4Default = () => (
-	<H4 />
+	<H4>
+		Title H4
+	</H4>
 );

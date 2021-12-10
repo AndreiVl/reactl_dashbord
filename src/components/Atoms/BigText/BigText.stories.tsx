@@ -7,5 +7,7 @@ export default {
 };
 
 export const BigTextDefault = () => (
-	<BigText />
+	<BigText>
+		Big Text
+	</BigText>
 )

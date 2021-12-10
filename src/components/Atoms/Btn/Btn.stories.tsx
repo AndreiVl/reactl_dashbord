@@ -10,27 +10,29 @@ export default {
 };
 
 export const BtnDefault = () => (
-	<Btn buttonText='Button' />
+	<Btn>
+		Button
+	</Btn>
 );
 export const BtnSubmit = () => (
-	<Btn buttonText='Button'
-		types={false}
-	/>
+	<Btn types={false}>
+		Button
+	</Btn>
 );
 export const BtnBlock = () => (
-	<Btn buttonText='Button'
-		type='btn--block'
-	/>
+	<Btn type='btn--block'>
+		Button
+	</Btn>
 );
 export const BtnFlat = () => (
-	<Btn buttonText='Button'
-		type='btn--flat'
-	/>
+	<Btn type='btn--flat'>
+		Button
+	</Btn>
 );
 export const BtnOutline = () => (
-	<Btn buttonText='Button'
-		type='btn--outline'
-	/>
+	<Btn type='btn--outline'>
+		Button
+	</Btn>
 );
 export const BtnIconBlock = () => (
 	<Btn

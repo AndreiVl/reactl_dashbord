@@ -13,7 +13,7 @@ export const Message: React.FC<MessageProps> = ({
 }) => {
 	return (
 		<div className={`message ${className || ""}`}>
-			<Text >
+			<Text>
 				{text}
 			</Text>
 		</div>

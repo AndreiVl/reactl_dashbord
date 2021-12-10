@@ -7,8 +7,9 @@ export default {
 };
 
 export const LinkDefault = () => (
-	<Link >
-		Link</Link>
+	<Link>
+		Link
+	</Link>
 );
 export const LinkBlack = () => (
 	<Link

@@ -2,7 +2,7 @@ import React from "react";
 import './btn.scss';
 
 type BtnProps = {
-	buttonText?: string,
+	children?: React.ReactNode,
 	type?: 'btn--block' | 'btn--outline' | 'btn--flat',
 	icon?: boolean,
 	iconMod?: 'btn--icon-gray' | 'btn--icon-darkgray',
@@ -14,7 +14,7 @@ type BtnProps = {
 }
 
 export const Btn: React.FC<BtnProps> = ({
-	buttonText,
+	children,
 	types = true,
 	type,
 	iconMod,
@@ -36,9 +36,9 @@ export const Btn: React.FC<BtnProps> = ({
 		>
 			{iconLeft && iconLeft}
 
-			{buttonText &&
+			{children &&
 				<span>
-					{buttonText}
+					{children}
 				</span>
 			}
 

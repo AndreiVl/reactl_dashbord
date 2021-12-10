@@ -8,10 +8,16 @@
 	/* 3 Typography */
 	color: $color-white;
 	text-transform: none;
+	font-weight: 600;
 
 	/* 4 Visual */
 	border-radius: 2px;
 	background-color: $color-red;
+}
+.badge .text {
+	/* 3 Typography */
+	color: $color-white;
+	font-weight: 600;
 }
 .badge--green {
 	/* 4 Visual */

@@ -1,10 +1,10 @@
 import React from "react";
 import './badge.scss';
 
-import { Text } from '../Text/Text'
+import { TextSm } from '../Text/Text'
 
 export type BadgeProps = {
-	text?: string,
+	children?: React.ReactNode,
 	color?: 'badge--green' | 'badge--red',
 	size?: 'badge--big',
 	visual?: 'badge--border' | 'badge--border-no',
@@ -12,7 +12,7 @@ export type BadgeProps = {
 }
 
 export const Badge: React.FC<BadgeProps> = ({
-	text = 'Badge',
+	children,
 	size,
 	color,
 	visual,
@@ -24,13 +24,9 @@ export const Badge: React.FC<BadgeProps> = ({
 		${color || ''}
 		${visual || ''}
 		`}>
-			<Text
-				fontWeight='text--bold'
-				size='text--sm'
-				color='text--white'
-			>
-				{text}
-			</Text>
+			<TextSm>
+				{children}
+			</TextSm>
 		</div>
 	)
 }

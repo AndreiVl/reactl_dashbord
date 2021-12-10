@@ -7,21 +7,22 @@ export default {
 }
 
 export const BadgeDefault = () => (
-	<Badge />
+	<Badge>
+		Badge
+	</Badge>
 );
 export const BadgeGreen = () => (
-	<Badge
-		color='badge--green'
-	/>
+	<Badge color='badge--green'>
+		Badge
+	</Badge>
 );
 export const BadgeBig = () => (
-	<Badge
-		size='badge--big'
-	/>
+	<Badge size='badge--big'>
+		Badge
+	</Badge>
 );
 export const BadgeBorder = () => (
-	<Badge
-		size='badge--big'
-		visual='badge--border'
-	/>
+	<Badge size='badge--big' visual='badge--border'>
+		Badge
+	</Badge>
 );

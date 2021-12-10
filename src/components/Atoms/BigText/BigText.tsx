@@ -2,15 +2,15 @@ import React from "react";
 import './big-text.scss'
 
 type BigTextProps = {
-	text?: string
+	children: React.ReactNode,
 }
 
 export const BigText: React.FC<BigTextProps> = ({
-	text = 'Big Text'
+	children,
 }) => {
 	return (
 		<p className="big-text">
-			{text}
+			{children}
 		</p>
 	)
 }

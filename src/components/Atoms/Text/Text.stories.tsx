@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "./Text";
+import { Text, TextEsm, TextSm, TextM } from "./Text";
 
 export default {
 	title: 'Components/Atoms/Text',
@@ -11,40 +11,21 @@ export const TextDefault = () => (
 		Text
 	</Text>
 );
-export const TextBold = () => (
-	<Text fontWeight="text--bold">
-		Text bold
-	</Text>
+
+export const TextEsmDefault = () => (
+	<TextEsm>
+		Text
+	</TextEsm>
 );
-export const TextSemibold = () => (
-	<Text fontWeight='text--semibold'>
-		Text semibold
-	</Text>
+
+export const TextSmDefault = () => (
+	<TextSm>
+		Text
+	</TextSm>
 );
-export const TextBlack = () => (
-	<Text color='text--black'>
-		Text black
-	</Text>
-);
-export const TextEsm = () => (
-	<Text size='text--esm'>
-		Text esm
-	</Text>
-);
-export const TextSm = () => (
-	<Text size='text--sm'>
-		Text Sm
-	</Text>
-);
-export const TextUper = () => (
-	<Text uppercase>
-		Text uper
-	</Text>
-);
-export const TextBoldUper = () => (
-	<Text uppercase
-		fontWeight="text--bold"
-	>
-		Text uppercase
-	</Text>
+
+export const TextMDefault = () => (
+	<TextM>
+		Text
+	</TextM>
 );

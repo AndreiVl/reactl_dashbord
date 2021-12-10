@@ -8,5 +8,7 @@ export default {
 
 
 export const H2Default = () => (
-	<H2 />
+	<H2>
+		Title H2
+	</H2>
 );

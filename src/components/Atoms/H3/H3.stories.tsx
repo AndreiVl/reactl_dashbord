@@ -8,10 +8,12 @@ export default {
 
 
 export const H3Default = () => (
-	<H3 />
+	<H3>
+		Title H3
+	</H3>
 );
 export const H3Gray = () => (
-	<H3
-		className="h3--gray"
-	/>
+	<H3 color='h3--gray'>
+		Title H3
+	</H3>
 );
