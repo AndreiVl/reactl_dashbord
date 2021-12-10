@@ -16,7 +16,6 @@ export const Search: React.FC<SearchProps> = ({
 		<form action="" method="post" name="search" className={`search ${className || ''}`} >
 			<Btn
 				icon
-				buttonText=''
 				iconLeft={
 					<Icon
 						icons={IconSearch}
@@ -32,8 +31,3 @@ export const Search: React.FC<SearchProps> = ({
 		</form>
 	)
 }
-
-// mixin search(data)
-// 	form.search(method="post" name="search" class!=attributes.class)
-// 		+btn({icon_l: data.icon, text: data.text, type: 'submit'})(class="icon--block")
-// 		+input({label_text: data.label_text, type: data.type ,name: data.name  , placeholder: data.placeholder})

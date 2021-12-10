@@ -31,6 +31,10 @@
 	/* 1 Positioning */
 	position: relative;
 }
+.tab-bar__item-tab .text {
+	/* 2 Block model */
+	font-weight: 600;
+}
 .tab-bar .react-tabs__tab--selected .tab-bar__item-tab::before {
 	/* 1 Positioning */
 	position: absolute;

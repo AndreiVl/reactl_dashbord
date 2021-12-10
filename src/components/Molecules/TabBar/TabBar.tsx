@@ -29,7 +29,7 @@ export const TabBar: React.FC<TabsProps> = ({
 					{tabItems.map((item, index) => (
 						<Tab key={index}>
 							<div className='tab-bar__item-tab'>
-								<Text fontWeight='text--semibold'>{item.tab}</Text>
+								<Text>{item.tab}</Text>
 								{item.number &&
 									<Notification red={item.red} number={item.number} />
 								}

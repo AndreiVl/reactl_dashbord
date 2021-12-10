@@ -1,7 +1,7 @@
 import React from 'react';
 import './chat-user.scss';
 import { UerPik } from '../../Atoms/UerPik/UerPik'
-import { Text } from '../../Atoms/Text/Text'
+import { Text, TextSm } from '../../Atoms/Text/Text'
 import { Notification } from '../../Atoms/Notification/Notification'
 import UserPik from '../../../assets/images/user-pic__img-01.png'
 import UserPik2x from '../../../assets/images/user-pic__img-01@2x.png'
@@ -51,28 +51,25 @@ export const ChatUser: React.FC<ChatUserProps> = ({
 			<div className="chat-user__info">
 				<div className="chat-user__left">
 					<a href={userUrl} target="_blank" className='chat-user__title'>
-						<Text
-							fontWeight='text--bold'
-						>
+						<Text>
 							{title}
 						</Text>
 					</a>
-					<Text
-						className='chat-user__text'
-						size='text--sm'
-					>
-						{text}
-					</Text>
+
+					<div className='chat-user__text'>
+						<TextSm>
+							{text}
+						</TextSm>
+					</div>
 				</div>
 
 				<div className="chat-user__right">
 					{date &&
-						<Text
-							className='chat-user__date'
-							size='text--sm'
-						>
-							{date} PM
-						</Text>
+						<div className='chat-user__date'>
+							<TextSm>
+								{date} PM
+							</TextSm>
+						</div>
 					}
 					{notification &&
 						<Notification

@@ -1,6 +1,6 @@
 import React from 'react';
 import './wallet-item.scss';
-import { Text } from '../../Atoms/Text/Text';
+import { Text, TextSm } from '../../Atoms/Text/Text';
 import { Link } from '../../Atoms/Link/Link';
 import { Icon } from '../../Atoms/Icon/Icon';
 import { Btn } from '../../Atoms/Btn/Btn';
@@ -49,7 +49,6 @@ export const WalletItem: React.FC<WalletItemProps> = ({
 
 				<Btn
 					icon
-					buttonText=''
 					iconMod='btn--icon-gray'
 					iconLeft={
 						<Icon
@@ -62,22 +61,29 @@ export const WalletItem: React.FC<WalletItemProps> = ({
 			</div>
 
 			<div className="wallet-item__body">
-				<Text className='wallet-item__crypto h1'>
-					{crypto}
-				</Text>
+				<div className='wallet-item__crypto'>
+					<Text >
+						{crypto}
+					</Text>
+				</div>
 
-				<Text className='wallet-item__currency'>
-					{currency}
-				</Text>
+				<div className='wallet-item__currency'>
+					<Text>
+						{currency}
+					</Text>
+				</div>
+
 			</div>
 
 			<div className="wallet-item__bottom">
 				{itemsLink.map((item, index) => (
-					<Text size='text--sm' className='wallet-item__link' key={index} >
-						<Link mod='link--black' href={item.href}>
-							{item.link}
-						</Link>
-					</Text>
+					<div className='wallet-item__link' key={index}>
+						<TextSm >
+							<Link mod='link--black' href={item.href}>
+								{item.link}
+							</Link>
+						</TextSm>
+					</div>
 				))}
 			</div>
 		</div>

@@ -7,7 +7,5 @@ export default {
 };
 
 export const HeaderProfileDefault = () => (
-	<HeaderProfile
-
-	/>
+	<HeaderProfile />
 );

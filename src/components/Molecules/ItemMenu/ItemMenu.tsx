@@ -27,11 +27,11 @@ export const ItemMenu: React.FC<ItemMenuProps> = ({
 					name={iconName}
 				/>
 			</div>
-			<Text
-				className='item-menu__text'
-			>
-				{link}
-			</Text>
+			<div className="item-menu__text">
+				<Text>
+					{link}
+				</Text>
+			</div>
 		</a>
 	)
 }

@@ -40,10 +40,9 @@ export const TableRecentActivities = () => (
 					'01.27.2019',
 					'02:22 PM',
 					'DFRASEDE',
-					<Badge
-						color='badge--green'
-						text='Completed'
-					/>,
+					<Badge color='badge--green'>
+						Completed
+					</Badge>,
 					'$2.39'
 				]
 			},
@@ -53,7 +52,9 @@ export const TableRecentActivities = () => (
 					'01.27.2019',
 					'02:22 PM',
 					'DFRASEDE',
-					<Badge />,
+					<Badge>
+						Badge
+					</Badge>,
 					'$2.39'
 				]
 			},
@@ -63,10 +64,9 @@ export const TableRecentActivities = () => (
 					'01.27.2019',
 					'02:22 PM',
 					'DFRASEDE',
-					<Badge
-						color='badge--green'
-						text='Completed'
-					/>,
+					<Badge color='badge--green'>
+						Completed
+					</Badge>,
 					'$2.39'
 				]
 			}

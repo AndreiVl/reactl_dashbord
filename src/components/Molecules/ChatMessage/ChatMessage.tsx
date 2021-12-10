@@ -1,6 +1,6 @@
 import React from "react";
 import './chat-message.scss';
-import { Text } from '../../Atoms/Text/Text';
+import { TextSm } from '../../Atoms/Text/Text';
 import { UerPik, UerPikProps } from '../../Atoms/UerPik/UerPik';
 import { Message } from '../../Atoms/Message/Message'
 
@@ -33,14 +33,13 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
 					text={message}
 					className={`${messageGreen ? 'message--green' : ''}`}
 				/>
-				<Text
-					className="chat-message__date"
-					size="text--sm"
-				>
-					{time} PM
-				</Text>
-			</div>
 
+				<div className="chat-message__date">
+					<TextSm>
+						{time} PM
+					</TextSm>
+				</div>
+			</div>
 		</div>
 	)
 }

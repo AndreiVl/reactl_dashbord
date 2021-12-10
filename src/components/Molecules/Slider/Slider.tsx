@@ -80,10 +80,19 @@ export const Slider: React.FC<SliderProps> = ({
 							<div className="slider__img">
 								<img src={item.img} alt={item.imgAlt} />
 							</div>
-							<H1 className='slider__title' text={item.title} />
-							<Text className='slider__text' color='text--black'>
-								{item.text}
-							</Text>
+
+							<div className="slider__title">
+								<H1 className='slider__title'>
+									{item.title}
+								</H1>
+							</div>
+
+							<div className="slider__text">
+								<Text>
+									{item.text}
+								</Text>
+							</div>
+
 						</div>
 					</div>
 				</SwiperSlide>

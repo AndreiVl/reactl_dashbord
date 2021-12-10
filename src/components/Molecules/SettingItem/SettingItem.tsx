@@ -26,15 +26,18 @@ export const SettingItem: React.FC<SettingItemProps> = ({
 	return (
 		<div className={`setting-item ${className || ''}`}>
 			<div className="setting-item__left">
-				<H3 className='setting-item__title' text={settingItemTitle} color='h3--gray' />
-				<H3 className='setting-item__info' text={settingItemInfo} color='h3--gray' />
+				<H3 className='setting-item__title' color='h3--gray'>
+					{settingItemTitle}
+				</H3>
+				<H3 className='setting-item__info' color='h3--gray'>
+					{settingItemInfo}
+				</H3>
 			</div>
 
 			<div className="setting-item__right">
 				{settingItemBtn &&
 					<Btn
 						icon
-						buttonText=''
 						iconMod='btn--icon-gray'
 						iconLeft={
 							<Icon
@@ -46,7 +49,9 @@ export const SettingItem: React.FC<SettingItemProps> = ({
 				}
 				{settingItemLink &&
 					<Link className='setting-item__link' href={settingItemUrl}>
-						<H3 text={settingItemLink} />
+						<H3>
+							{settingItemLink}
+						</H3>
 					</Link>
 				}
 			</div>

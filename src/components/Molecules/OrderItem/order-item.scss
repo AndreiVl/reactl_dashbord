@@ -67,6 +67,12 @@
 	/* 2 Block model */
 	display: inline-block;
 }
+.order-item__title .text,
+.order-item__crypto .text {
+	/* 3 Typography */
+	font-weight: bold;
+	color: $color-black;
+}
 .order-item__bottom {
 	/* 2 Block model */
 	display: flex;

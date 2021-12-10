@@ -17,7 +17,6 @@ export const ChatForm: React.FC<ChatFormProps> = ({
 		<form method="post" name="chat-form" className={`chat-form ${className || ''}`}>
 			<Btn
 				circle
-				buttonText=''
 				iconLeft={
 					<Icon
 						icons={IconClip}
@@ -35,7 +34,6 @@ export const ChatForm: React.FC<ChatFormProps> = ({
 				circle
 				circleBg
 				types={false}
-				buttonText=''
 				iconLeft={
 					<Icon
 						icons={IconPlain}
@@ -43,8 +41,6 @@ export const ChatForm: React.FC<ChatFormProps> = ({
 					/>
 				}
 			/>
-
-
 		</form>
 	)
 }

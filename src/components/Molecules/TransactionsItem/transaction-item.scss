@@ -59,6 +59,11 @@
 	/* 3 Typography */
 	text-transform: uppercase;
 }
+.transactions-item__crypto .text {
+	/* 3 Typography */
+	font-weight: 600;
+	color: $color-black;
+}
 .transactions-item__bottom {
 	/* 2 Block model */
 	display: flex;
@@ -99,4 +104,8 @@
 	margin-left: 26px;
 	margin-right: 26px;
 	vertical-align: middle;
+}
+.transactions-item__conferm .text {
+	/* 3 Typography */
+	font-weight: 600;
 }

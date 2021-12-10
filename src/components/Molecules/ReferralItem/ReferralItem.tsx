@@ -2,7 +2,7 @@ import React from "react";
 import './referral-item.scss';
 import { Badge } from '../../Atoms/Badge/Badge';
 import { UerPik } from '../../Atoms/UerPik/UerPik';
-import { Text } from '../../Atoms/Text/Text';
+import { Text, TextSm } from '../../Atoms/Text/Text';
 import { Btn } from '../../Atoms/Btn/Btn';
 import { Link } from '../../Atoms/Link/Link';
 import { Icon } from '../../Atoms/Icon/Icon';
@@ -34,10 +34,9 @@ export const ReferralItem: React.FC<ReferralItemProps> = ({
 	return (
 		<div className={`referral-item ${className || ''}`}>
 			<div className="referral__status">
-				<Badge
-					text={badgeText}
-					color={`${badgeColor ? 'badge--green' : 'badge--red'}`}
-				/>
+				<Badge color={`${badgeColor ? 'badge--green' : 'badge--red'}`}>
+					{badgeText}
+				</Badge>
 			</div>
 
 			<div className="referral__user">
@@ -63,11 +62,9 @@ export const ReferralItem: React.FC<ReferralItemProps> = ({
 						href={mailto}
 						mod='link--gray'
 					>
-						<Text
-							size='text--sm'
-						>
+						<TextSm>
 							{email}
-						</Text>
+						</TextSm>
 					</Link>
 
 				</div>
@@ -77,7 +74,6 @@ export const ReferralItem: React.FC<ReferralItemProps> = ({
 				<Btn
 					icon
 					iconMod='btn--icon-gray'
-					buttonText=''
 					iconLeft={
 						<Icon
 							icons={IconMore}
@@ -90,16 +86,3 @@ export const ReferralItem: React.FC<ReferralItemProps> = ({
 		</div>
 	)
 }
-
-// mixin referral-item(data)
-// div.referral-item(class!=attributes.class)
-// 	div.referral__status
-// 		+badge(data.badge)(class=data.badge_class)
-// 	div.referral__user
-// 		div.referral__user-pik
-// 			+user-pik(data.user_pik)(class="user-pic--big")
-// 		div.referral__user-info
-// 			p.referral__name.text.text--sm!=data.name
-// 			a.referral__email.text.text--sm.link.link--gray(href="mailto:email")!=data.email
-// 	div.referral__btn
-// 		+btn({icon_l: 'icon--more', icon_width: 'icon--18'})(class="icon--block icon--block-gray")

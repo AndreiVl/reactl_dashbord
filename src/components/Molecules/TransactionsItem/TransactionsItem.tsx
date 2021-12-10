@@ -1,6 +1,5 @@
 import React from 'react';
 import './transaction-item.scss';
-import { Badge, BadgeProps } from '../../Atoms/Badge/Badge';
 import { Text } from '../../Atoms/Text/Text';
 
 
@@ -13,7 +12,7 @@ type TransactionsItemProps = {
 	date?: string,
 	crypto?: string,
 	conferm?: string,
-	badge?: BadgeProps,
+	badge?: React.ReactNode,
 	bottom?: boolean,
 }
 
@@ -32,30 +31,38 @@ export const TransactionsItem: React.FC<TransactionsItemProps> = ({
 	return (
 		<div className={`transactions-item ${className || ''}`}>
 			<div className="transactions-item__top">
-				<Text className='transactions-item__text'>
-					{textOne}
-					<img className='transactions-item__img' src={img} alt={imgAlt} />
-					{textTwo}
-				</Text>
-				<div className="transactions-item__info">
-					<Text className='transactions-item__date'>
-						{date}
+				<div className='transactions-item__text'>
+					<Text>
+						{textOne}
+						<img className='transactions-item__img' src={img} alt={imgAlt} />
+						{textTwo}
 					</Text>
+				</div>
 
-					<Text className='transactions-item__crypto' color='text--black' fontWeight='text--semibold'>
-						{crypto}
-					</Text>
+				<div className="transactions-item__info">
+					<div className='transactions-item__date'>
+						<Text>
+							{date}
+						</Text>
+					</div>
+
+					<div className='transactions-item__crypto'>
+						<Text>
+							{crypto}
+						</Text>
+					</div>
 				</div>
 			</div>
 
 			{bottom &&
 				<div className="transactions-item__bottom">
-					<Text fontWeight='text--semibold'>
-						{conferm}
-					</Text>
-					{badge &&
-						<Badge {...badge} />
-					}
+					<div className='transactions-item__conferm'>
+						<Text>
+							{conferm}
+						</Text>
+					</div>
+
+					{badge}
 				</div>
 			}
 		</div >

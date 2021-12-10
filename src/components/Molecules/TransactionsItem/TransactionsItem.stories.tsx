@@ -1,5 +1,6 @@
 import React from 'react';
 import { TransactionsItem } from './TransactionsItem';
+import { Badge } from '../../Atoms/Badge/Badge';
 import ImgArrowsGreen from '../../../assets/images/transactions-item__img-arrows-green.svg';
 
 
@@ -30,11 +31,9 @@ export const TransactionsIteBadge = () => (
 		date='2017-12-03 13:57:30'
 		crypto='0.35473875 BTC'
 		bottom
-		badge={{
-			text: 'Accept',
-			size: 'badge--big',
-			color: 'badge--green'
-		}}
+		badge={
+			<Badge size='badge--big' color='badge--green' >Accept</Badge>
+		}
 	/>
 );
 

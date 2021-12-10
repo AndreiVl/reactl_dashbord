@@ -21,10 +21,12 @@ export const Menu: React.FC<MenuProps> = ({
 }) => {
 	return (
 		<nav className={`menu ${className || ''}`}>
-			<H4
-				className='menu__title'
-				text={title}
-			/>
+			<div className="menu__title">
+				<H4 className=''>
+					{title}
+				</H4>
+			</div>
+
 			<ul className='menu__list'>
 				{items.map((item, index) => (
 					<li className="menu__item" key={index}>

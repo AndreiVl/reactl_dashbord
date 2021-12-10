@@ -2,7 +2,7 @@ import React from "react";
 import './currency-card.scss'
 import { H4 } from '../../Atoms/H4/H4'
 import { Icon } from '../../Atoms/Icon/Icon'
-import { Text } from '../../Atoms/Text/Text'
+import { TextSm } from '../../Atoms/Text/Text'
 import { BigText } from '../../Atoms/BigText/BigText'
 
 type СurrencyСardProps = {
@@ -28,9 +28,9 @@ export const СurrencyСard: React.FC<СurrencyСardProps> = ({
 		<a className={`currency-card ${className || ""}`} href={cardUrl} target="_blank">
 			<div className='currency-card__top'>
 				<div className='currency-card__name-currency'>
-					<H4
-						text={name}
-					/>
+					<H4>
+						{name}
+					</H4>
 				</div>
 				<Icon
 					icons={icon}
@@ -39,16 +39,14 @@ export const СurrencyСard: React.FC<СurrencyСardProps> = ({
 				/>
 			</div>
 			<div className="currency-card__total">
-				<BigText
-					text={total}
-				/>
+				<BigText>
+					{total}
+				</BigText>
 			</div>
 			<div className="currency-card__course">
-				<Text
-					size='text--sm'
-				>
+				<TextSm>
 					{course}
-				</Text>
+				</TextSm>
 			</div>
 		</a>
 	)
