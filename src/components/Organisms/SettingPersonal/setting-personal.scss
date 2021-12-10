@@ -54,6 +54,15 @@
 	border-radius: 3px;
 	background-color: $color-border;
 }
+.setting-personal__title .text {
+	/* 3 Typography */
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.setting-personal__lead .text {
+	/* 3 Typography */
+	font-weight: 600;
+}
 .setting-personal__list {
 	/* 2 Block model */
 	padding: 0;

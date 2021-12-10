@@ -18,7 +18,9 @@ export default {
 export const OrderDefault = () => (
 	<Order
 		title={
-			<H2 text='All Orders' />
+			<H2>
+				All Orders
+			</H2>
 		}
 		controlOne={
 			<Checkbox
@@ -41,7 +43,8 @@ export const OrderDefault = () => (
 		}
 		orderItems={[
 			{
-				date: <Text fontWeight='text--semibold'>November, 2020</Text>,
+				date:
+					<Text>November, 2020</Text>,
 				orderItem: [
 					<OrderItem
 						title='Buy Ethereum'
@@ -60,7 +63,8 @@ export const OrderDefault = () => (
 				]
 			},
 			{
-				date: <Text fontWeight='text--semibold'>October, 2020</Text>,
+				date:
+					<Text>October, 2020</Text>,
 				orderItem: [
 					<OrderItem
 						title='Buy Bitcoin'

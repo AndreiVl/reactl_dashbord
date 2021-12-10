@@ -21,7 +21,11 @@ export const Settings: React.FC<SettingsProps> = ({
 					<div className='settings__mrb-violet'>
 						{title}
 					</div>
-					{lead}
+
+					<div className='settings__lead'>
+						{lead}
+					</div>
+
 				</div>
 			</div>
 

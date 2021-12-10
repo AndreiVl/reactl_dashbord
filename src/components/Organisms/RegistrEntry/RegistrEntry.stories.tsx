@@ -6,7 +6,7 @@ import { Slider } from '../../Molecules/Slider/Slider';
 import { Btn } from '../../Atoms/Btn/Btn';
 import { Input } from '../../Atoms/Input/Input';
 import { Checkbox } from '../../Atoms/Checkbox/Checkbox';
-import { Text } from '../../Atoms/Text/Text';
+import { Text, TextEsm } from '../../Atoms/Text/Text';
 import { Link } from '../../Atoms/Link/Link';
 import ImgSlider from "../../../assets/images/slider__img-01.png"
 
@@ -26,11 +26,9 @@ export const RegistrEntryDefault = () => (
 				title='Register'
 				desc='Create New Dashlite Account'
 				button={
-					<Btn
-						type='btn--block'
-						buttonText='Register'
-						types={false}
-					/>
+					<Btn type='btn--block' types={false}>
+						Register
+					</Btn>
 				}
 				itemsForm={[
 					{
@@ -84,7 +82,7 @@ export const RegistrEntryDefault = () => (
 			<Text> Already have an account ? <Link href='#'> Sign in instead</Link></Text>
 		}
 		divider={
-			<Text fontWeight='text--bold' size='text--esm'>OR</Text>
+			<TextEsm>OR</TextEsm>
 		}
 		linksSocial={
 			<Text ><Link className='registr-entry__fb'>Facebook</Link> <Link >Google</Link></Text>
@@ -95,7 +93,7 @@ export const RegistrEntryDefault = () => (
 			<Text size='text--sm'><Link >Help</Link></Text>,
 		]}
 		copy={
-			<Text color='text--black'>© 2019 DashLite. All Rights Reserved.</Text>
+			<Text>© 2019 DashLite. All Rights Reserved.</Text>
 		}
 		slider={
 			<Slider
@@ -135,11 +133,9 @@ export const RegistrEntrySigin = () => (
 				title='Sign-In'
 				desc='Access the DashLite panel using your email and passcode.'
 				button={
-					<Btn
-						type='btn--block'
-						buttonText='Sign-In'
-						types={false}
-					/>
+					<Btn type='btn--block' types={false}>
+						Sign-In
+					</Btn>
 				}
 				itemsForm={[
 					{
@@ -182,7 +178,7 @@ export const RegistrEntrySigin = () => (
 			<Text>New on our platform? <Link href='#'>Create an account</Link></Text>
 		}
 		divider={
-			<Text fontWeight='text--bold' size='text--esm'>OR</Text>
+			<TextEsm>OR</TextEsm>
 		}
 		qvestion={
 			<Text >I don't have an account? <Link>Create an account</Link></Text>
@@ -196,7 +192,7 @@ export const RegistrEntrySigin = () => (
 			<Text size='text--sm'><Link >Help</Link></Text>,
 		]}
 		copy={
-			<Text color='text--black'>© 2019 DashLite. All Rights Reserved.</Text>
+			<Text>© 2019 DashLite. All Rights Reserved.</Text>
 		}
 		slider={
 			<Slider

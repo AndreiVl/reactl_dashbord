@@ -46,7 +46,10 @@ export const SettingPersonal: React.FC<SettingPersonalProps> = ({
 				{title}
 			</div>
 			<div className="main__item">
-				{lead}
+				<div className='setting-personal__lead'>
+					{lead}
+				</div>
+
 			</div>
 
 			{subtitle &&

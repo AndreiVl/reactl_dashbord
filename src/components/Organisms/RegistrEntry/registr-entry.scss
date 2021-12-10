@@ -88,6 +88,10 @@
 	/* 3 Typography */
 	color: $color-black;
 }
+.registr-entry__or .text {
+	/* 3 Typography */
+	font-weight: bold;
+}
 .registr-entry__or::before,
 .registr-entry__or::after {
 	/* 1 Positioning */
@@ -132,6 +136,10 @@
 .registr-entry__links-item:last-child {
 	/* 2 Block model */
 	margin-right: 0;
+}
+.registr-entry__copy .text {
+	/* 3 Typography */
+	color: $color-black;
 }
 .registr-entry__slider {
 	/* 2 Block model */

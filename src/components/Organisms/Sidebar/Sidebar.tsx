@@ -2,7 +2,7 @@ import React from 'react';
 import './sidebar.scss';
 import { Btn } from '../../Atoms/Btn/Btn';
 import { Icon } from '../../Atoms/Icon/Icon';
-import { Text } from '../../Atoms/Text/Text';
+import { Text, TextSm } from '../../Atoms/Text/Text';
 import IconClose from '../../../assets/Icons/icon--close.svg';
 
 type SidebarProps = {
@@ -47,9 +47,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
 				<div className="sidebar__bottom">
 					{itemMenu}
-					<Text size='text--sm'>
+					<TextSm>
 						{copy} {link}
-					</Text>
+					</TextSm>
 				</div>
 			</div>
 		</aside>

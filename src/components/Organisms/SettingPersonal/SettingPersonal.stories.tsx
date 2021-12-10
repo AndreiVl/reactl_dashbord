@@ -1,6 +1,6 @@
 import React from 'react';
 import { SettingPersonal } from './SettingPersonal';
-import { Text } from '../../Atoms/Text/Text';
+import { Text, TextSm } from '../../Atoms/Text/Text';
 import { Link } from '../../Atoms/Link/Link';
 import { Btn } from '../../Atoms/Btn/Btn';
 import { H2 } from '../../Atoms/H2/H2';
@@ -28,21 +28,21 @@ export const SettingPersonalDefault = () => (
 
 		}
 		button={
-			<Btn
-				buttonText='Upgrade'
-			/>
+			<Btn>
+				Upgrade
+			</Btn>
 		}
 		title={
 			<H2>Personal Information</H2>
 		}
 		lead={
-			<Text fontWeight='text--semibold' >
+			<Text >
 				Basic info, like your name and address, that you use on Nio Platform.</Text>
 		}
 		subtitle={
-			<Text fontWeight='text--bold' size='text--sm' uppercase >
+			<TextSm>
 				BASICS
-			</Text>
+			</TextSm>
 		}
 		settingPersonaBasics={[
 			<SettingItem
@@ -75,9 +75,9 @@ export const SettingPersonalDefault = () => (
 			/>,
 		]}
 		subtitleTwo={
-			<Text fontWeight='text--bold' size='text--sm' uppercase >
+			<TextSm>
 				PREFERENCES
-			</Text>
+			</TextSm>
 		}
 		settingPersonaPreference={[
 			<SettingItem

@@ -23,16 +23,20 @@ export default {
 export const ReferralDefault = () => (
 	<Referral
 		title={
-			<H1 text='Referral' />
+			<H1>
+				Referral
+			</H1>
 		}
 		lead={
-			<Text fontWeight='text--semibold' color='text--black'>Agent Management </Text>
+			<Text>Agent Management </Text>
 		}
 		desc={
-			<Text fontWeight='text--semibold'>Accounts</Text>
+			<Text>Accounts</Text>
 		}
 		subtitle={
-			<H2 text='Affiliate' />
+			<H2>
+				Affiliate
+			</H2>
 		}
 		sublead={
 			<Text>Get referal bonuses by sharing your referal link with friends</Text>
@@ -56,12 +60,20 @@ export const ReferralDefault = () => (
 			</>
 		}
 		headItems={[
-			<H3 text='Account Status' />,
+			<H3>
+				Account Status
+			</H3>,
 			<>
-				<H3 text='User Name' />
-				<H3 text='Email' />
+				<H3>
+					User Name
+				</H3>
+				<H3>
+					Email
+				</H3>
 			</>,
-			<H3 text='Action' />,
+			<H3>
+				Action
+			</H3>,
 		]}
 		referralItems={[
 			<ReferralItem

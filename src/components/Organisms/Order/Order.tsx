@@ -32,7 +32,9 @@ export const Order: React.FC<OrderProps> = ({
 			{orderItems.map((item, index) => (
 				<div className='order__month'>
 					<div className='order__mb-blue'>
-						{item.date}
+						<div className='order__date'>
+							{item.date}
+						</div>
 					</div>
 
 					<OrderItemList orderItemList={item.orderItem} />

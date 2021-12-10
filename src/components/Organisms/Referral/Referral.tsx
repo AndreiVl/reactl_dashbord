@@ -35,12 +35,14 @@ export const Referral: React.FC<ReferralProps> = ({
 
 				<div className="row justify-content-between main__item">
 					<div className="col-12 col-md-auto">
-						<div className="referral--mb-mob-viol">
+						<div className='referral__lead referral--mb-mob-viol'>
 							{lead}
 						</div>
 					</div>
 					<div className="col-12 col-md-auto">
-						{desc}
+						<div className='referral__desc'>
+							{desc}
+						</div>
 					</div>
 				</div>
 

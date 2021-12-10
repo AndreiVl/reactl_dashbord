@@ -7,6 +7,7 @@ import { TransactionsItem } from '../../Molecules/TransactionsItem/TransactionsI
 import IconChart from '../../../assets/Icons/icon--chart.svg';
 import ImgArrowsGreen from '../../../assets/images/transactions-item__img-arrows-green.svg';
 import ImgArrowsRed from '../../../assets/images/transactions-item__img-arrows-red.svg';
+import { Badge } from '../../Atoms/Badge/Badge';
 
 export default {
 	title: 'Components/Organisms/Transactions',
@@ -17,10 +18,14 @@ export default {
 export const TransactionsDefault = () => (
 	<Transactions
 		title={
-			<H1 text='Transactions' />
+			<H1>
+				Transactions
+			</H1>
 		}
 		lefTitle={
-			<H2 text='Summary' />
+			<H2>
+				Summary
+			</H2>
 		}
 		summaryItemsLeft={[
 			<SummaryItem
@@ -38,7 +43,9 @@ export const TransactionsDefault = () => (
 			/>
 		]}
 		rightTitle={
-			<H2 text='Transactions' />
+			<H2>
+				Transactions
+			</H2>
 		}
 		summaryItemsRight={[
 			<SummaryItem
@@ -64,7 +71,9 @@ export const TransactionsDefault = () => (
 			/>
 		]}
 		subTitle={
-			<H2 text='Transactions' />
+			<H2>
+				Transactions
+			</H2>
 		}
 		transactionsItems={[
 			<TransactionsItem
@@ -76,11 +85,10 @@ export const TransactionsDefault = () => (
 				crypto='0.35473875 BTC'
 				bottom
 				conferm='12 Confirmation'
-				badge={{
-					text: '1.124589756 BTC',
-					size: 'badge--big',
-					color: 'badge--green'
-				}}
+				badge={
+					<Badge size='badge--big' color='badge--green' >1.124589756 BTC</Badge>
+				}
+
 			/>,
 			<TransactionsItem
 				textOne='2dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4v5d4x54dA5A5A52dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4 '
@@ -91,11 +99,7 @@ export const TransactionsDefault = () => (
 				crypto='0.35473875 BTC'
 				bottom
 				conferm='12 Confirmation'
-				badge={{
-					text: '1.124589756 BTC',
-					size: 'badge--big',
-					color: 'badge--red'
-				}}
+				badge={<Badge size='badge--big' color='badge--red' >1.124589756 BTC</Badge>}
 			/>,
 			<TransactionsItem
 				textOne='2dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4v5d4x54dA5A5A52dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4 '
@@ -106,11 +110,7 @@ export const TransactionsDefault = () => (
 				crypto='0.35473875 BTC'
 				bottom
 				conferm='12 Confirmation'
-				badge={{
-					text: '1.124589756 BTC',
-					size: 'badge--big',
-					color: 'badge--green'
-				}}
+				badge={<Badge size='badge--big' color='badge--green' >1.124589756 BTC</Badge>}
 			/>,
 			<TransactionsItem
 				textOne='2dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4v5d4x54dA5A5A52dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4 '
@@ -121,11 +121,7 @@ export const TransactionsDefault = () => (
 				crypto='0.35473875 BTC'
 				bottom
 				conferm='12 Confirmation'
-				badge={{
-					text: '1.124589756 BTC',
-					size: 'badge--big',
-					color: 'badge--red'
-				}}
+				badge={<Badge size='badge--big' color='badge--red' >1.124589756 BTC</Badge>}
 			/>,
 		]}
 	/>

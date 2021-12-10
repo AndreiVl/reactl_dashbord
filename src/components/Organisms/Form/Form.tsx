@@ -28,7 +28,9 @@ export const Form: React.FC<FormProps> = ({
 	return (
 		<form className={`form ${formType ? `form--${formType}` : ''}`} {...props} method='Post'>
 			<div className='form__item'>
-				<H3 text={title} />
+				<H3>
+					{title}
+				</H3>
 				<Text>
 					{desc}
 				</Text>

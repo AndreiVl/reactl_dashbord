@@ -16,7 +16,9 @@ export default {
 export const TableRecentActivitiesDefault = () => (
 	<TableRecentActivities
 		title={
-			<H4 text='Recent Activities' />
+			<H4>
+				Recent Activities'
+			</H4>
 		}
 		btn={
 			<Btn
@@ -42,7 +44,9 @@ export const TableRecentActivitiesDefault = () => (
 							'01.27.2019',
 							'02:22 PM',
 							'DFRASEDE',
-							<Badge text='Paused' />,
+							<Badge>
+								Paused
+							</Badge>,
 							'$2.39'
 						]
 					},
@@ -52,7 +56,9 @@ export const TableRecentActivitiesDefault = () => (
 							'01.27.2019',
 							'02:22 PM',
 							'DFRASEDE',
-							<Badge text='Completed' color='badge--green' />,
+							<Badge color='badge--green'>
+								Completed
+							</Badge>,
 							'$2.39'
 						]
 					},
@@ -62,7 +68,9 @@ export const TableRecentActivitiesDefault = () => (
 							'01.27.2019',
 							'02:22 PM',
 							'DFRASEDE',
-							<Badge text='Completed' color='badge--green' />,
+							<Badge color='badge--green'>
+								Completed
+							</Badge>,
 							'$2.39'
 						]
 					},
@@ -72,7 +80,9 @@ export const TableRecentActivitiesDefault = () => (
 							'01.27.2019',
 							'02:22 PM',
 							'DFRASEDE',
-							<Badge text='Paused' />,
+							<Badge>
+								Paused
+							</Badge>,
 							'$2.39'
 						]
 					},
@@ -82,7 +92,9 @@ export const TableRecentActivitiesDefault = () => (
 							'01.27.2019',
 							'02:22 PM',
 							'DFRASEDE',
-							<Badge text='Completed' color='badge--green' />,
+							<Badge color='badge--green'>
+								Completed
+							</Badge>,
 							'$2.39'
 						]
 					},
@@ -92,7 +104,9 @@ export const TableRecentActivitiesDefault = () => (
 							'01.27.2019',
 							'02:22 PM',
 							'DFRASEDE',
-							<Badge text='Completed' color='badge--green' />,
+							<Badge color='badge--green'>
+								Completed
+							</Badge>,
 							'$2.39'
 						]
 					},
@@ -102,7 +116,9 @@ export const TableRecentActivitiesDefault = () => (
 							'01.27.2019',
 							'02:22 PM',
 							'DFRASEDE',
-							<Badge text='Paused' />,
+							<Badge>
+								Paused
+							</Badge>,
 							'$2.39'
 						]
 					},

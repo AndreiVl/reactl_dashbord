@@ -19,14 +19,14 @@ export default {
 export const WalletDefault = () => (
 	<Wallet
 		title={
-			<H1 text='Wallet' />
+			<H1>Wallet</H1>
 		}
 		lead={
 			<Text>See full list of your orders of your account</Text>
 		}
 		walletItems={[
 			{
-				title: <Text fontWeight='text--bold'>Crypto Accounts</Text>,
+				title: <Text>Crypto Accounts</Text>,
 				walletItem: [
 					<WalletItem
 						icons={IconBtc}
@@ -103,7 +103,7 @@ export const WalletDefault = () => (
 				]
 			},
 			{
-				title: <Text fontWeight='text--bold'>Fiat Accounts</Text>,
+				title: <Text>Fiat Accounts</Text>,
 				walletItem: [
 					<WalletItem
 						icons={IconUsd}

@@ -21,10 +21,14 @@ export default {
 export const HomeDefault = () => (
 	<Home
 		title={
-			<H1 text='Welcome!' />
+			<H1>
+				Welcome!
+			</H1>
 		}
 		btn={
-			<Btn buttonText='Download Report' />
+			<Btn>
+				Download Report
+			</Btn>
 		}
 		currencyCardItems={[
 			<СurrencyСard
@@ -55,7 +59,9 @@ export const HomeDefault = () => (
 		bottom={
 			<TableRecentActivities
 				title={
-					<H4 text='Recent Activities' />
+					<H4>
+						Recent Activities
+					</H4>
 				}
 				btn={
 					<Btn
@@ -81,7 +87,9 @@ export const HomeDefault = () => (
 									'01.27.2019',
 									'02:22 PM',
 									'DFRASEDE',
-									<Badge text='Paused' />,
+									<Badge>
+										Paused
+									</Badge>,
 									'$2.39'
 								]
 							},
@@ -91,7 +99,9 @@ export const HomeDefault = () => (
 									'01.27.2019',
 									'02:22 PM',
 									'DFRASEDE',
-									<Badge text='Completed' color='badge--green' />,
+									<Badge color='badge--green'>
+										Completed
+									</Badge>,
 									'$2.39'
 								]
 							},
@@ -101,7 +111,9 @@ export const HomeDefault = () => (
 									'01.27.2019',
 									'02:22 PM',
 									'DFRASEDE',
-									<Badge text='Completed' color='badge--green' />,
+									<Badge color='badge--green'>
+										Completed
+									</Badge>,
 									'$2.39'
 								]
 							},
@@ -111,7 +123,9 @@ export const HomeDefault = () => (
 									'01.27.2019',
 									'02:22 PM',
 									'DFRASEDE',
-									<Badge text='Paused' />,
+									<Badge>
+										Paused
+									</Badge>,
 									'$2.39'
 								]
 							},
@@ -121,7 +135,9 @@ export const HomeDefault = () => (
 									'01.27.2019',
 									'02:22 PM',
 									'DFRASEDE',
-									<Badge text='Completed' color='badge--green' />,
+									<Badge color='badge--green'>
+										Completed
+									</Badge>,
 									'$2.39'
 								]
 							},
@@ -131,7 +147,9 @@ export const HomeDefault = () => (
 									'01.27.2019',
 									'02:22 PM',
 									'DFRASEDE',
-									<Badge text='Completed' color='badge--green' />,
+									<Badge color='badge--green'>
+										Completed
+									</Badge>,
 									'$2.39'
 								]
 							},
@@ -141,7 +159,9 @@ export const HomeDefault = () => (
 									'01.27.2019',
 									'02:22 PM',
 									'DFRASEDE',
-									<Badge text='Paused' />,
+									<Badge>
+										Paused
+									</Badge>,
 									'$2.39'
 								]
 							},

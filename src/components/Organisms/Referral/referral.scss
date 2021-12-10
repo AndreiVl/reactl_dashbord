@@ -1,5 +1,14 @@
 @import "../../../assets/sass/variables.scss";
 @import "../../../assets/sass/grid/bootstrap-grid.scss";
+.referral__lead .text {
+	/* 3 Typography */
+	font-weight: 600;
+	color: $color-black;
+}
+.referral__desc .text {
+	/* 3 Typography */
+	font-weight: 600;
+}
 .referral__donload {
 	/* 2 Block model */
 	display: flex;

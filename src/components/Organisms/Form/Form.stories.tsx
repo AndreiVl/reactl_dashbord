@@ -16,11 +16,9 @@ export const FormSigin = () => (
 		title='Sign-In'
 		desc='Access the DashLite panel using your email and passcode.'
 		button={
-			<Btn
-				type='btn--block'
-				buttonText='Sign-In'
-				types={false}
-			/>
+			<Btn type='btn--block' types={false}>
+				Sign-In
+			</Btn>
 		}
 		itemsForm={[
 			{
@@ -65,11 +63,9 @@ export const FormRegistr = () => (
 		title='Register'
 		desc='Create New Dashlite Account'
 		button={
-			<Btn
-				type='btn--block'
-				buttonText='Register'
-				types={false}
-			/>
+			<Btn type='btn--block' types={false}>
+				Register
+			</Btn>
 		}
 		itemsForm={[
 			{

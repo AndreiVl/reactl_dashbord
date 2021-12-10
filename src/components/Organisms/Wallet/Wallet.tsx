@@ -32,8 +32,8 @@ export const Wallet: React.FC<WalletProps> = ({
 
 				<div className="col-12 col-md-auto">
 					<div className='wallet__btns'>
-						<Btn buttonText='Send' />
-						<Btn buttonText='Withdraw' />
+						<Btn>Send</Btn>
+						<Btn>Withdraw</Btn>
 					</div>
 				</div>
 			</div>
