@@ -25,16 +25,22 @@ export const PageDashBoardOrderBook = () => (
 		content={
 			<OrderBook
 				title={
-					<H1 text='Your Orders' />
+					<H1>
+						Your Orders
+					</H1>
 				}
 				lead={
 					<Text>See full list of your orders of your account</Text>
 				}
 				btnTopOne={
-					<Btn buttonText='Get statement' type='btn--outline' />
+					<Btn type='btn--outline'>
+						Get statement
+					</Btn>
 				}
 				btnTopTwo={
-					<Btn buttonText='Buy Coin' />
+					<Btn>
+						Buy Coin
+					</Btn>
 				}
 				tabs={
 					<TabBar
@@ -55,7 +61,9 @@ export const PageDashBoardOrderBook = () => (
 						contentItems={[
 							<Order
 								title={
-									<H2 text='All Orders' />
+									<H2>
+										All Orders
+									</H2>
 								}
 								controlOne={
 									<Checkbox
@@ -78,7 +86,7 @@ export const PageDashBoardOrderBook = () => (
 								}
 								orderItems={[
 									{
-										date: <Text fontWeight='text--semibold'>November, 2020</Text>,
+										date: <Text>November, 2020</Text>,
 										orderItem: [
 											<OrderItem
 												title='Buy Ethereum'
@@ -97,7 +105,7 @@ export const PageDashBoardOrderBook = () => (
 										]
 									},
 									{
-										date: <Text fontWeight='text--semibold'>October, 2020</Text>,
+										date: <Text>October, 2020</Text>,
 										orderItem: [
 											<OrderItem
 												title='Buy Bitcoin'
@@ -121,7 +129,9 @@ export const PageDashBoardOrderBook = () => (
 							/>,
 							<Order
 								title={
-									<H2 text='All Orders' />
+									<H2>
+										All Orders
+									</H2>
 								}
 								controlOne={
 									<Checkbox
@@ -144,7 +154,7 @@ export const PageDashBoardOrderBook = () => (
 								}
 								orderItems={[
 									{
-										date: <Text fontWeight='text--semibold'>November, 2020</Text>,
+										date: <Text >November, 2020</Text>,
 										orderItem: [
 											<OrderItem
 												title='Buy Ethereum'
@@ -166,7 +176,9 @@ export const PageDashBoardOrderBook = () => (
 							/>,
 							<Order
 								title={
-									<H2 text='All Orders' />
+									<H2>
+										All Orders
+									</H2>
 								}
 								controlOne={
 									<Checkbox
@@ -189,7 +201,7 @@ export const PageDashBoardOrderBook = () => (
 								}
 								orderItems={[
 									{
-										date: <Text fontWeight='text--semibold'>November, 2020</Text>,
+										date: <Text >November, 2020</Text>,
 										orderItem: [
 											<OrderItem
 												title='Buy Ethereum'
@@ -205,14 +217,16 @@ export const PageDashBoardOrderBook = () => (
 					/>
 				}
 				more={
-					<Btn buttonText='Load More' type='btn--flat'
+					<Btn type='btn--flat'
 						iconLeft={
 							<Icon
 								name='icon--refresh'
 								icons={IconRefresh}
 							/>
 						}
-					/>
+					>
+						Load More
+					</Btn>
 				}
 			/>
 		}

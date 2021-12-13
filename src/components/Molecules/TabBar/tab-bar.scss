@@ -2,14 +2,17 @@
 .tab-bar .react-tabs__tab-list {
 	/* 2 Block model */
 	display: flex;
-	column-gap: 32px;
+	column-gap: 15px;
 	row-gap: 16px;
-	padding-bottom: 16px;
 	margin-bottom: 32px;
 
 	@media (min-width: 449px) {
 		/* 4 Visual */
 		border-bottom: 1px solid $color-border;
+	}
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		column-gap: 32px;
 	}
 }
 .tab-bar .react-tabs__tab {
@@ -27,18 +30,9 @@
 	/* 4 Visual */
 	border: none;
 }
-.tab-bar__item-tab {
-	/* 1 Positioning */
-	position: relative;
-}
-.tab-bar__item-tab .text {
-	/* 2 Block model */
-	font-weight: 600;
-}
-.tab-bar .react-tabs__tab--selected .tab-bar__item-tab::before {
-	/* 1 Positioning */
+.tab-bar .react-tabs__tab--selected::before {
 	position: absolute;
-	bottom: -16px;
+	bottom: -1px;
 	left: 0;
 	right: 0;
 
@@ -48,7 +42,19 @@
 
 	/* 4 Visual */
 	content: "";
+	border: none;
 	background-color: $color-bg-2;
+}
+.tab-bar__item-tab {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	padding-bottom: 16px;
+}
+.tab-bar__item-tab .text {
+	/* 2 Block model */
+	font-weight: 600;
 }
 .tab-bar__item-tab {
 	/* 2 Block model */

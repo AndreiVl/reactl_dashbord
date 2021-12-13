@@ -6,7 +6,7 @@ import { Slider } from '../components/Molecules/Slider/Slider';
 import { Btn } from '../components/Atoms/Btn/Btn';
 import { Input } from '../components/Atoms/Input/Input';
 import { Checkbox } from '../components/Atoms/Checkbox/Checkbox';
-import { Text } from '../components/Atoms/Text/Text';
+import { Text, TextEsm } from '../components/Atoms/Text/Text';
 import { Link } from '../components/Atoms/Link/Link';
 import ImgSlider from "../assets/images/slider__img-01.png"
 
@@ -26,11 +26,9 @@ export const PageSigin: React.FC<PageSiginProps> = ({
 					title='Sign-In'
 					desc='Access the DashLite panel using your email and passcode.'
 					button={
-						<Btn
-							type='btn--block'
-							buttonText='Sign-In'
-							types={false}
-						/>
+						<Btn type='btn--block' types={false}>
+							Sign-In
+						</Btn>
 					}
 					itemsForm={[
 						{
@@ -73,7 +71,7 @@ export const PageSigin: React.FC<PageSiginProps> = ({
 				<Text>New on our platform? <Link href='#'>Create an account</Link></Text>
 			}
 			divider={
-				<Text fontWeight='text--bold' size='text--esm'>OR</Text>
+				<TextEsm>OR</TextEsm>
 			}
 			qvestion={
 				<Text >I don't have an account? <Link>Create an account</Link></Text>
@@ -87,7 +85,7 @@ export const PageSigin: React.FC<PageSiginProps> = ({
 				<Text size='text--sm'><Link >Help</Link></Text>,
 			]}
 			copy={
-				<Text color='text--black'>© 2019 DashLite. All Rights Reserved.</Text>
+				<Text>© 2019 DashLite. All Rights Reserved.</Text>
 			}
 			slider={
 				<Slider

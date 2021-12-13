@@ -20,7 +20,7 @@ export const Home: React.FC<HomeProps> = ({
 }) => {
 	return (
 		<div className={`home ${className || ''}`}>
-			<div className="container-fluid">
+			<div className="container container-fluid">
 				<div className="row justify-content-between main__item">
 					<div className="col-12 col-md-auto">
 						<div className="main__mrh1">

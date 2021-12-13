@@ -105,6 +105,16 @@
 	margin-right: 26px;
 	vertical-align: middle;
 }
+.transactions-item__conferm {
+	/* 1 Positioning */
+	margin-top: 8px;
+	margin-bottom: 8px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin: 0;
+	}
+}
 .transactions-item__conferm .text {
 	/* 3 Typography */
 	font-weight: 600;

@@ -7,7 +7,7 @@ import { Slider } from '../../components/Molecules/Slider/Slider';
 import { Btn } from '../../components/Atoms/Btn/Btn';
 import { Input } from '../../components/Atoms/Input/Input';
 import { Checkbox } from '../../components/Atoms/Checkbox/Checkbox';
-import { Text } from '../../components/Atoms/Text/Text';
+import { Text, TextEsm } from '../../components/Atoms/Text/Text';
 import { Link } from '../../components/Atoms/Link/Link';
 import ImgSlider from "../../assets/images/slider__img-01.png"
 
@@ -29,11 +29,9 @@ export const PageLoginRigistr = () => (
 						title='Register'
 						desc='Create New Dashlite Account'
 						button={
-							<Btn
-								type='btn--block'
-								buttonText='Register'
-								types={false}
-							/>
+							<Btn type='btn--block' types={false}>
+								Register
+							</Btn>
 						}
 						itemsForm={[
 							{
@@ -87,7 +85,7 @@ export const PageLoginRigistr = () => (
 					<Text> Already have an account ? <Link href='#'> Sign in instead</Link></Text>
 				}
 				divider={
-					<Text fontWeight='text--bold' size='text--esm'>OR</Text>
+					<TextEsm>OR</TextEsm>
 				}
 				linksSocial={
 					<Text ><Link className='registr-entry__fb'>Facebook</Link> <Link >Google</Link></Text>
@@ -98,7 +96,7 @@ export const PageLoginRigistr = () => (
 					<Text size='text--sm'><Link >Help</Link></Text>,
 				]}
 				copy={
-					<Text color='text--black'>© 2019 DashLite. All Rights Reserved.</Text>
+					<Text>© 2019 DashLite. All Rights Reserved.</Text>
 				}
 				slider={
 					<Slider

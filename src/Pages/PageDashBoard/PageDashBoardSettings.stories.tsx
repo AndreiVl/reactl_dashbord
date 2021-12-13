@@ -5,7 +5,7 @@ import { SettingPersonal } from '../../components/Organisms/SettingPersonal/Sett
 import { SettingItem } from '../../components/Molecules/SettingItem/SettingItem';
 import { H1 } from '../../components/Atoms/H1/H1';
 import { H2 } from '../../components/Atoms/H2/H2';
-import { Text } from '../../components/Atoms/Text/Text';
+import { Text, TextSm } from '../../components/Atoms/Text/Text';
 import { Link } from '../../components/Atoms/Link/Link';
 import { Btn } from '../../components/Atoms/Btn/Btn';
 import { TabBar } from '../../components/Molecules/TabBar/TabBar';
@@ -21,7 +21,9 @@ export const PageDashBoardSettings = () => (
 		content={
 			<Settings
 				title={
-					<H1 text='My Profile' />
+					<H1>
+						My Profile
+					</H1>
 				}
 				lead={
 					<Text>You have full control to manage your own account setting.</Text>
@@ -58,21 +60,23 @@ export const PageDashBoardSettings = () => (
 
 								}
 								button={
-									<Btn
-										buttonText='Upgrade'
-									/>
+									<Btn>
+										Upgrade
+									</Btn>
 								}
 								title={
-									<H2 text='Personal Information' />
+									<H2>
+										Personal Information
+									</H2>
 								}
 								lead={
-									<Text fontWeight='text--semibold' >
+									<Text>
 										Basic info, like your name and address, that you use on Nio Platform.</Text>
 								}
 								subtitle={
-									<Text fontWeight='text--bold' size='text--sm' uppercase >
+									<TextSm>
 										BASICS
-									</Text>
+									</TextSm>
 								}
 								settingPersonaBasics={[
 									<SettingItem
@@ -105,9 +109,9 @@ export const PageDashBoardSettings = () => (
 									/>,
 								]}
 								subtitleTwo={
-									<Text fontWeight='text--bold' size='text--sm' uppercase >
+									<TextSm>
 										PREFERENCES
-									</Text>
+									</TextSm>
 								}
 								settingPersonaPreference={[
 									<SettingItem
@@ -142,21 +146,23 @@ export const PageDashBoardSettings = () => (
 
 								}
 								button={
-									<Btn
-										buttonText='Upgrade'
-									/>
+									<Btn>
+										Upgrade
+									</Btn>
 								}
 								title={
-									<H2 text='Security' />
+									<H2>
+										Security
+									</H2>
 								}
 								lead={
-									<Text fontWeight='text--semibold' >
+									<Text>
 										Basic info, like your name and address, that you use on Nio Platform.</Text>
 								}
 								subtitle={
-									<Text fontWeight='text--bold' size='text--sm' uppercase >
+									<TextSm>
 										BASICS
-									</Text>
+									</TextSm>
 								}
 								settingPersonaBasics={[
 									<SettingItem
@@ -204,20 +210,22 @@ export const PageDashBoardSettings = () => (
 
 								}
 								button={
-									<Btn
-										buttonText='Upgrade'
-									/>
+									<Btn>
+										Upgrade
+									</Btn>
 								}
 								title={
-									<H2 text='Notifications' />
+									<H2>
+										Notifications
+									</H2>
 								}
 								lead={
-									<Text fontWeight='text--semibold' >
+									<Text >
 										Basic info, like your name and address, that you use on Nio Platform.
 									</Text>
 								}
 								subtitleTwo={
-									<Text fontWeight='text--bold' size='text--sm' uppercase >
+									<Text >
 										PREFERENCES
 									</Text>
 								}
@@ -254,15 +262,17 @@ export const PageDashBoardSettings = () => (
 
 								}
 								button={
-									<Btn
-										buttonText='Upgrade'
-									/>
+									<Btn>
+										Upgrade
+									</Btn>
 								}
 								title={
-									<H2 text='Connect Social' />
+									<H2>
+										Connect Social
+									</H2>
 								}
 								lead={
-									<Text fontWeight='text--semibold' >
+									<Text >
 										Basic info, like your name and address, that you use on Nio Platform.
 									</Text>
 								}

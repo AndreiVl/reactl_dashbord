@@ -4,6 +4,7 @@ import { H1 } from '../components/Atoms/H1/H1';
 import { H2 } from '../components/Atoms/H2/H2';
 import { SummaryItem } from '../components/Atoms/SummaryItem/SummaryItem';
 import { TransactionsItem } from '../components/Molecules/TransactionsItem/TransactionsItem';
+import { Badge } from '../components/Atoms/Badge/Badge';
 import IconChart from '../assets/Icons/icon--chart.svg';
 import ImgArrowsGreen from '../assets/images/transactions-item__img-arrows-green.svg';
 import ImgArrowsRed from '../assets/images/transactions-item__img-arrows-red.svg';
@@ -16,10 +17,14 @@ export const PageTransactions: React.FC<PageTransactionsProps> = ({
 	return (
 		<Transactions
 			title={
-				<H1 text='Transactions' />
+				<H1>
+					Transactions
+				</H1>
 			}
 			lefTitle={
-				<H2 text='Summary' />
+				<H2>
+					Summary
+				</H2>
 			}
 			summaryItemsLeft={[
 				<SummaryItem
@@ -37,7 +42,9 @@ export const PageTransactions: React.FC<PageTransactionsProps> = ({
 				/>
 			]}
 			rightTitle={
-				<H2 text='Transactions' />
+				<H2>
+					Transactions
+				</H2>
 			}
 			summaryItemsRight={[
 				<SummaryItem
@@ -63,7 +70,9 @@ export const PageTransactions: React.FC<PageTransactionsProps> = ({
 				/>
 			]}
 			subTitle={
-				<H2 text='Transactions' />
+				<H2>
+					Transactions
+				</H2>
 			}
 			transactionsItems={[
 				<TransactionsItem
@@ -75,11 +84,10 @@ export const PageTransactions: React.FC<PageTransactionsProps> = ({
 					crypto='0.35473875 BTC'
 					bottom
 					conferm='12 Confirmation'
-					badge={{
-						text: '1.124589756 BTC',
-						size: 'badge--big',
-						color: 'badge--green'
-					}}
+					badge={
+						<Badge size='badge--big' color='badge--green' >1.124589756 BTC</Badge>
+					}
+
 				/>,
 				<TransactionsItem
 					textOne='2dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4v5d4x54dA5A5A52dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4 '
@@ -90,11 +98,7 @@ export const PageTransactions: React.FC<PageTransactionsProps> = ({
 					crypto='0.35473875 BTC'
 					bottom
 					conferm='12 Confirmation'
-					badge={{
-						text: '1.124589756 BTC',
-						size: 'badge--big',
-						color: 'badge--red'
-					}}
+					badge={<Badge size='badge--big' color='badge--red' >1.124589756 BTC</Badge>}
 				/>,
 				<TransactionsItem
 					textOne='2dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4v5d4x54dA5A5A52dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4 '
@@ -105,11 +109,7 @@ export const PageTransactions: React.FC<PageTransactionsProps> = ({
 					crypto='0.35473875 BTC'
 					bottom
 					conferm='12 Confirmation'
-					badge={{
-						text: '1.124589756 BTC',
-						size: 'badge--big',
-						color: 'badge--green'
-					}}
+					badge={<Badge size='badge--big' color='badge--green' >1.124589756 BTC</Badge>}
 				/>,
 				<TransactionsItem
 					textOne='2dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4v5d4x54dA5A5A52dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4 '
@@ -120,11 +120,7 @@ export const PageTransactions: React.FC<PageTransactionsProps> = ({
 					crypto='0.35473875 BTC'
 					bottom
 					conferm='12 Confirmation'
-					badge={{
-						text: '1.124589756 BTC',
-						size: 'badge--big',
-						color: 'badge--red'
-					}}
+					badge={<Badge size='badge--big' color='badge--red' >1.124589756 BTC</Badge>}
 				/>,
 			]}
 		/>
