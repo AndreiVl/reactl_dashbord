@@ -51,3 +51,5 @@ npx sb init
 npm run storybook
 
 ## Starts Storybook in build-storybook
+
+npm run build-storybook -- -o ./dist/storybook/build
